@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人中心</title>
+
+    <link rel="stylesheet" href="../swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="./css/user.css" />
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/jquery-ui/jquery-ui.js"></script>
+    <script src="../swiper/js/swiper.min.js"></script>
+    <script src="../js/swiper-init.js"></script>
+    <script src="../js/pagination.js"></script>
+    <script src="../js/pagination-init.js"></script>
+    <script src="./js/user.js"></script>
+</head>
+
+<body>
+    <!-- 通用头部S -->
+    <header class="clear-fix">
+        <div class="xinglu-header clear-fix">
+            <h1 id="xinglu-header-logo">
+                <a href="index.html">
+                    <img src="../images/index/logo.png" alt="星鹿直播" />
+                </a>
+            </h1>
+            <div class="xinglu-header-nav">
+                <div class="xinglu-nav-item">
+                    <a class="headactive" href="../index.html">首页</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="../rankList.html">排行榜</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="../shopMall.html">商城</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="../download.html">下载客户端</a>
+                </div>
+            </div>
+            <div class="xinglu-header-search clear-fix">
+                <form action="">
+                    <input type="text" placeholder="搜索房间" />
+                    <button type="submit" class="btn-search"><img src="../images/index/sousuo.png" alt=""></button>
+                </form>
+            </div>
+            <div class="xinglu-header-right">
+                <div class="xinglu-header-control clearfix">
+                    <div class="xinglu-nav-right xinglu-nav-dailihoutai">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-daili-icon" src="../images/index/houtai.png" alt="">
+                            <span class="title">代理后台</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-onlineChongzhi">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-chongzhi-icon" src="../images/index/chongzhi.png"
+                                alt="">
+                            <span class="title">在线充值</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-login">
+                        <a class="xinglu-nav-title" href="#login" id="nav-login">
+                            <img class="xinglu-nav-icon xinglu-nav-login-icon" src="../images/index/login.png" alt="">
+                            <span class="xinglu-login">登录</span>
+                        </a>
+                        <i class="xinglu-nav-login-l">|</i>
+                        <a class="xinglu-nav-title" href="#register" id="nav-register">
+                            <span class="xinglu-register">注册</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 通用头部E -->
+
+    <!-- containerWrap S -->
+    <div class="user-containerWrap clear-fix">
+        <div class="user-container">
+            <div class="user-left">
+                <div class="user-personInfo">
+                    <div class="user-userInfo">
+                        <img src="../images/index/meinv3.jpg" alt="" />
+                        <div class="userName">PIKAQIU</div>
+                        <div class="userID">ID:555666</div>
+                    </div>
+                    <ul class="user-myAssets">
+                        <li>
+                            <img src="./images/center/xingbi.png" alt="" />
+                            <span>2225555</span>
+                        </li>
+                        <li>
+                            <img src="./images/center/yuanbao.png" alt="" />
+                            <span>2225555</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="user-centerList long-list">
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/menuItem1.png" alt="">
+                            <span>充值商城</span>
+                        </a>
+                    </li>
+                    <li class="click-item">
+                        <a href="" class="user-item">
+                            <img src="./images/center/c_menuItem2.png" alt="">
+                            <span class="click-span-item">我的资料</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/menuItem5.png" alt="">
+                            <span>我的房管</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/menuItem6.png" alt="">
+                            <span>我的关注</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/menuItem7.png" alt="">
+                            <span>我的粉丝</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/menuItem8.png" alt="">
+                            <span>我的靓号</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/menuItem9.png" alt="">
+                            <span>我守护的主播</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/menuItem10.png" alt="">
+                            <span>我要提现</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/menuItem11.png" alt="">
+                            <span>我的座驾</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/menuItem2.png" alt="">
+                            <span>我的账单</span>
+                        </a>
+                    </li>
+                    <ul class="bill-list">
+                        <li>
+                            <a class="bill-item" href=""> 收到的礼物 </a>
+                        </li>
+                        <li>
+                            <a class="bill-item" href=""> 送出的礼物 </a>
+                        </li>
+                        <li>
+                            <a class="bill-item" href=""> 充值记录 </a>
+                        </li>
+                        <li>
+                            <a class="bill-item" href=""> 消费记录 </a>
+                        </li>
+                        <li>
+                            <a class="bill-item" href=""> 收入记录 </a>
+                        </li>
+                        <li>
+                            <a class="bill-item" href=""> 游戏记录 </a>
+                        </li>
+                        <li>
+                            <a class="bill-item" href=""> 直播时长统计</a>
+                        </li>
+                        <li>
+                            <a class="bill-item" href=""> 兑换星币 </a>
+                        </li>
+                    </ul>
+                </ul>
+
+            </div>
+            <div class="user-right clear-fix">
+                <div class="user-infos clear-fix">
+                    <div class="infos-left">
+                        <div class="infos-avatar" data-target="#avatar-modal" data-toggle="modal">
+                            <img src="./images/center/meinv3.jpg" alt="">
+                            <span>修改头像</span>
+                        </div>
+                        <div class="infos-name">
+                            <span>PIKAQIU</span>
+                            <em>(ID:123456)</em>
+                        </div>
+                        <div class="info-detail">
+                            <span>女</span>
+                            <span>湖南-常德-武陵区</span>
+                            <span>保密</span>
+                            <span>丰满</span>
+                        </div>
+                    </div>
+                    <div class="infos-right">
+                        <a href="javascript:;" class="applyhost">申请主播</a>
+                        <a href="javascript:;" class="editInfo">编辑信息</a>
+                        <a href="javascript:;" class="changePW">修改密码</a>
+                        <a href="javascript:;" class="mypage">我的主页</a>
+                    </div>
+                </div>
+                <div class="infos-content">
+                    <div class="infos-level-tips">
+                        <span>您的当前等级为<i class="user-level user-level_0"></i></span>
+                        <span>还需消费<em> 34525622</em>星币可升级到<i class="user-level user-level_1"></i></span>
+                        <span>您的主播等级为<i class="host-level hostress_3"></i></span>
+                        <span>还需获得<em>54545455</em>积分可升级到<i class="host-level hostress_3"></i></span>
+                    </div>
+                    <div class="user-level-area">
+                        <ul class="user-level-bar">
+                            <li><em></em><img src="./images/center/user_level0.png" alt=""></li>
+                            <li class="current-level"><em></em><img src="./images/center/user_level1.png" alt=""></li>
+                            <li><em></em><img src="./images/center/user_level2.png" alt=""></li>
+                            <li><em></em><img src="./images/center/user_level3.png" alt=""></li>
+                            <li><em></em><img src="./images/center/user_level4.png" alt=""></li>
+                            <li><em></em><img src="./images/center/user_level5.png" alt=""></li>
+                            <li><em></em><img src="./images/center/user_level6.png" alt=""></li>
+                            <li><em></em><img src="./images/center/user_level7.png" alt=""></li>
+                        </ul>
+                        <div class="user-level-prograss"></div>
+                    </div>
+                    <div class="host-level-area">
+
+                        <div class="host-level-prograss"></div>
+                        <ul class="host-level-bar">
+                            <li><em></em><img src="../images/level/hostress_1.png" alt=""></li>
+                            <li class="current-level"><em></em><img src="../images/level/hostress_2.png" alt=""></li>
+                            <li><em></em><img src="../images/level/hostress_3.png" alt=""></li>
+                            <li><em></em><img src="../images/level/hostress_4.png" alt=""></li>
+                            <li><em></em><img src="../images/level/hostress_5.png" alt=""></li>
+                            <li><em></em><img src="../images/level/hostress_6.png" alt=""></li>
+                            <li><em></em><img src="../images/level/hostress_7.png" alt=""></li>
+                            <li><em></em><img src="../images/level/hostress_8.png" alt=""></li>
+
+                        </ul>
+
+                    </div>
+                    <table class="user-common-table info-table">
+                        <thead>
+                            <th>星币</th>
+                            <th>积分</th>
+                            <th>VIP</th>
+                            <th>至尊VIP</th>
+                            <th>靓号</th>
+                            <th>座驾</th>
+
+                        </thead>
+                        <tbody id="info-table">
+                            <td>
+                                <span>2888888811111111111111111</span>
+                                <a href="">充值</a>
+                            </td>
+                            <td>
+                                <span>28888888</span>
+                                <a href="">星币兑换</a>
+                            </td>
+                            <td>
+                                <span>已到期</span>
+                                <a href="">购买</a>
+                            </td>
+                            <td>
+                                <span>暂无</span>
+                                <a href="">购买</a>
+                            </td>
+                            <td>
+                                <span>12345</span>
+                                <a href="">购买</a>
+                            </td>
+                            <td>
+                                <span>哈雷摩托</span>
+                                <a href="">购买</a>
+                            </td>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- containerWrap E -->
+    <!-- 修改密码弹窗S -->
+    <div class="changePW-wrap">
+        <div class="msg_box">
+            <div class="msg-title">
+                <span>修改密码</span>
+                <img class="closetitle" src="../images/shopMall/close.png" alt="">
+            </div>
+            <div class="msg-content">
+                <form action="" class="changePW-form">
+                    <div class="changePW-item">
+                        <span>当前密码：</span>
+                        <input type="password" name="currentPW">
+                    </div>
+                    <div class="changePW-item">
+                        <span>新密码：</span>
+                        <input type="password" name="newPW">
+                    </div>
+                    <div class="changePW-item">
+                        <span>确认密码：</span>
+                        <input type="password" name="checkPW">
+                    </div>
+                </form>
+            </div>
+            <div class="changepw-wrong-tips">错误消息提示</div>
+            <div class="msg-footer">
+                <span class="toConfirm msg-button">立即修改</span>
+            </div>
+        </div>
+    </div>
+    <!-- 修改密码弹窗E -->
+    <!-- 编辑信息弹窗S -->
+    <div class="serInfo-wrap">
+        <div class="msg_box">
+            <div class="msg-title">
+                <span>编辑信息</span>
+                <img class="closetitle" src="../images/shopMall/close.png" alt="">
+            </div>
+            <div class="msg-content">
+                <form action="" class="setinfo-form">
+                    <div class="setInfo-item">
+                        <span>昵&nbsp;&nbsp;&nbsp;称：</span>
+                        <input type="text" name="nickname">
+                    </div>
+                    <div class="setInfo-item">
+                        <span>性&nbsp;&nbsp;&nbsp;别：</span>
+                        <select name="sex" class="setInfo-select">
+                            <option value="0">保密</option>
+                            <option value="1">男</option>
+                            <option value="2">女</option>
+                        </select>
+                    </div>
+                    <div class="setInfo-item">
+                        <span>星&nbsp;&nbsp;&nbsp;座：</span>
+                        <select class="setInfo-select" name="constellation">
+                            <option value="0">保密</option>
+                            <option value="1">白羊座</option>
+                            <option value="2">金牛座</option>
+                            <option value="3">双子座</option>
+                            <option value="4">巨蟹座</option>
+                            <option value="5">狮子座</option>
+                            <option value="6">处女座</option>
+                            <option value="7">天枰座</option>
+                            <option value="8">天蝎座</option>
+                            <option value="9">射手座</option>
+                            <option value="10">魔蝎座</option>
+                            <option value="11">水瓶座</option>
+                            <option value="12">双鱼座</option>
+                        </select>
+                    </div>
+                    <div class="setInfo-item">
+                        <span>身&nbsp;&nbsp;&nbsp;材：</span>
+                        <select name="figure" class="setInfo-select">
+                            <option value="0">苗条</option>
+                            <option value="1">丰满</option>
+                            <option value="2">丰硕</option>
+                            <option value="3">富态</option>
+                        </select>
+                    </div>
+                    <div class="setInfo-item">
+                        <span>所在地：</span>
+                        <select id="province" class="select-local" name="province">
+                            <option value="2">北京</option>
+                            <option value="3">安徽</option>
+                            <option value="4">福建</option>
+                            <option value="5">甘肃</option>
+                            <option value="6">广东</option>
+                            <option value="7">广西</option>
+                            <option value="8">贵州</option>
+                            <option value="9">海南</option>
+                            <option value="10">河北</option>
+                            <option value="11">河南</option>
+                            <option value="12">黑龙江</option>
+                            <option value="13">湖北</option>
+                            <option value="14">湖南</option>
+                            <option value="15">吉林</option>
+                            <option value="16">江苏</option>
+                            <option value="17">江西</option>
+                            <option value="18">辽宁</option>
+                            <option value="19">内蒙古</option>
+                            <option value="20">宁夏</option>
+                            <option value="21">青海</option>
+                            <option value="22">山东</option>
+                            <option value="23">山西</option>
+                            <option value="24">陕西</option>
+                            <option value="25">上海</option>
+                            <option value="26">四川</option>
+                            <option value="27">天津</option>
+                            <option value="28">西藏</option>
+                            <option value="29">新疆</option>
+                            <option value="30">云南</option>
+                            <option value="31">浙江</option>
+                            <option value="32">重庆</option>
+                            <option value="33">香港</option>
+                            <option value="34">澳门</option>
+                            <option value="35">台湾</option>
+                        </select>
+                        <select id="city" class="select-local" name="city">
+                            <option value="52">北京</option>
+                        </select>
+                        <select id="county" class="select-local" name="county">
+                            <option value="500">东城区</option>
+                            <option value="501">西城区</option>
+                            <option value="502">海淀区</option>
+                            <option value="503">朝阳区</option>
+                            <option value="504">崇文区</option>
+                            <option value="505">宣武区</option>
+                            <option value="506">丰台区</option>
+                            <option value="507">石景山区</option>
+                            <option value="508">房山区</option>
+                            <option value="509">门头沟区</option>
+                            <option value="510">通州区</option>
+                            <option value="511">顺义区</option>
+                            <option value="512">昌平区</option>
+                            <option value="513">怀柔区</option>
+                            <option value="514">平谷区</option>
+                            <option value="515">大兴区</option>
+                            <option value="516">密云县</option>
+                            <option value="517">延庆县</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="set-wrong-tips">错误消息提示</div>
+            <div class="msg-footer">
+                <span class="toConfirm msg-button">保存</span>
+                <span class="toCancel msg-button">取消</span>
+            </div>
+        </div>
+    </div>
+    <!-- 编辑信息弹窗E -->
+    <!-- 修改头像S -->
+    <div id="msg-wrap-avatar" class="change-avatar">
+        <div class="msg_box">
+            <div class="msg-title">
+                <span>修改头像</span>
+                <img class="closetitle" src="../images/shopMall/close.png" alt="">
+            </div>
+            <div class="msg-content">
+            </div>
+        </div>
+    </div>
+
+    <!-- 修改头像E -->
+    <div id="mask"></div>
+    <!-- footerS -->
+    <footer class="clear-fix">
+        <div class="xinglu-footer clear-fix">
+            <div class="xinglu-footer-nav">
+                <p>
+                    <a href="">帮助中心</a>
+                    <a href="">联系我们</a>
+                    <a href="">直播服务协议</a>
+                    <a href="">关于我们</a>
+                    <a href="">用户协议</a>
+                    <a href="">文明直播承诺书</a>
+                    <a href="">直播公约</a>
+                    <a href="">用户隐私手册</a>
+                </p>
+                <p>
+                    <span>星鹿直播(浙ICP备20029795号)</span>
+                    |
+                    <span>12318全国文化市场举报</span>
+                    |
+                    <span>网上有害信息举报专区</span>
+                    |
+                    <span>浙江省互联网违法和不良信息举报中心</span>
+                    |
+                    <span>网络110报警服务</span>
+                    |
+                    <span>邮箱举报：1181182018@qq.com</span>
+                </p>
+                <h6>义乌市星汇网络科技有限公司</h6>
+                <h6>网络文化经营许可证：浙网文(2020)3282-148号</h6>
+                <h6>©2020--2020 星鹿直播ywsxh.cn版权所有</h6>
+            </div>
+        </div>
+    </footer>
+    <!-- footerE -->
+</body>
+
+</html>

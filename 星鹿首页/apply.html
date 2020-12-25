@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./layui/layui.js"></script>
+</head>
+
+<body>
+    <!-- 通用头部S -->
+    <header class="clear-fix">
+        <div class="xinglu-header clear-fix">
+            <h1 id="xinglu-header-logo">
+                <a href="index.html">
+                    <img src="images/index/logo.png" alt="星鹿直播" />
+                </a>
+            </h1>
+            <div class="xinglu-header-nav">
+                <div class="xinglu-nav-item">
+                    <a class="headactive" href="index.html">首页</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="rankList.html">排行榜</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="shopMall.html">商城</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="download.html">下载客户端</a>
+                </div>
+            </div>
+            <div class="xinglu-header-search clear-fix">
+                <form action="">
+                    <input type="text" placeholder="搜索房间" />
+                    <button type="submit" class="btn-search"><img src="./images/index/sousuo.png" alt=""></button>
+                </form>
+            </div>
+            <div class="xinglu-header-right">
+                <div class="xinglu-header-control clearfix">
+                    <div class="xinglu-nav-right xinglu-nav-dailihoutai">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-daili-icon" src="./images/index/houtai.png" alt="">
+                            <span class="title">代理后台</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-onlineChongzhi">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-chongzhi-icon" src="./images/index/chongzhi.png"
+                                alt="">
+                            <span class="title">在线充值</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-login">
+                        <a class="xinglu-nav-title" id="nav-login">
+                            <img class="xinglu-nav-icon xinglu-nav-login-icon" src="./images/index/login.png" alt="">
+                            <span class="xinglu-login">登录</span>
+                        </a>
+                        <i class="xinglu-nav-login-l">|</i>
+                        <a class="xinglu-nav-title" id="nav-register">
+                            <span class="xinglu-register">注册</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 通用头部E -->
+    <!-- 申请主播S -->
+    <div class="apply-wrap">
+        <div class="apply">
+            <div class="apply-content">
+                <div class="notice">
+                    <div class="content-body">
+                        <div class="c1"></div>
+                        <div class="c2">
+                            <span>1.申请协议</span>
+                            <span>2.提交资料</span>
+                            <span>3.官方审核</span>
+                        </div>
+                        <div class="c3">
+                            <div class="left">
+                                <a href="javascript:;" name="notice" class="notice selected">申请须知</a>
+                                <a href="javascript:;" name="regulations" class="regulations">主播管理条例</a>
+                            </div>
+                            <div class="right">
+                                <div class="contain" id="notice">
+                                    <h2>签约须知</h2>
+                                    <p>  您好！欢迎您申请加入趣蜂直播的主播。请您在申请前，详细阅读本协议的所有内容（未成年人应在监护人陪同下阅读）。当您在申请签约主播过程中勾选“我同意”按钮后， 即表示您已完全理解并接受本协议的所有约定，此后您不得以未阅读本协议内容或类似言辞做任何形式的违约解释。
+                                    </p>
+                                    <h3>一、概要</h3>
+                                    <p>1．本协议由您与趣蜂直播共同缔结，具有合同效力。您在趣蜂直播的行为，包括但不限于您申请成为主播、您以主播身份进行歌曲演唱、脱口秀等任何形式的在线表演活动、您从趣蜂直播用户处获得礼物、参与趣蜂直播举办的活动、在趣蜂直播上传、发布信息等，均受本协议和《趣蜂直播内容违规定义及处理方案》约束。<br />2．趣蜂直播包括但不限于网址为： http://www.qufeng8.com/的网站及移动客户端及其升级版本，以及将来可能出现以信息网络为传输渠道的其他终端平台。<br />3．趣蜂直播有权根据需要，不时修改本协议，并以网站公示的方式发布，无需另行单独通知您。变更后的协议一经公布，立即或在公示时明确的特定时间自动生效。若您在前述变更后继续使用趣蜂直播服务的，即表示您已经阅读、理解并接受经修订的协议内容。
+                                    </p>
+                                    <h3>二、趣蜂直播及服务</h3>
+                                    <p>1．通过趣蜂直播和该平台接入的其他服务，主播可以创建和装饰网上直播间、在线进行才艺表演、获得用户赠送的虚拟礼品；用户可以与主播进行在线互动、购买金币后对主播的表演予以赠送虚拟礼物。<br />2．趣蜂直播将竭力提升主播知名度和用户活跃度。主播和用户可参加趣蜂直播组织的活动以及使用其它信息服务及技术服务，具体以趣蜂直播不时公布的活动或服务内容为准。<br />3．趣蜂直播为主播提供视频直播有关的网站技术支持服务，除此之外因视频直播所需的环境、设备（包括但不限于网络、电脑、麦克风、视频装置等软件、硬件）等条件以及费用均由主播自行负担。<br />4．为规范趣蜂直播的良好秩序，趣蜂直播有权（但无义务）调配主播的才艺表演安排，包括但不限于表演的时段、时长、方式等，主播应尊重并服从趣蜂直播官方的管理。<br />5．如主播的才艺表演出现任何有损趣蜂直播利益、品牌形象之情况时，趣蜂直播有权采取相应措施进行干预，包括但不限于立即中断在线表演、限制/冻结主播的权限、追究主播的违约责任等。<br />6．为使平台服务更加规范化、系统化，趣蜂直播将按照法律法规的要求，不时制定、调整与主播才艺表演相关的规范、制度，并通过系统公告、系统通知、当面告知等的方式通知主播，敬请主播注意查询并应予遵守。
+                                    </p>
+                                    <h3>三、主播资格和行为规范</h3>
+                                    <p>1．为获取主播资格，您需先注册登录。您在此明确授权，在您账户注册成功时，您的注册信息已授权趣蜂直播披露和使用，以便更好地为您提供服务。<br />2．趣蜂直播将对您在申请成为主播的过程中提交的资料予以审核，且有权独立决定是否给予您签约主播资格。<br />3．您应当具有缔结并完全履行本协议的资格和能力。若您不具备完全民事行为能力，则您及您的监护人应承担因此而导致的一切后果，且趣蜂直播有权注销或永久冻结您的账户，并向您及您的监护人索偿相应损失。<br />4．因您提供的个人信息（身份证号、银行账号、联系方式、居住地址等）、资料是趣蜂直播判断您身份的重要依据，故您需保证提供给趣蜂直播的所有信息的真实性、完整性、合法性和有效性。如有任何变动，您必须及时通知趣蜂直播官方。如因您提交的信息资料违反该约定的，您应自行承担由此发生的所有责任和损失，趣蜂直播有权中止/终止您使用趣蜂直播的任何一项或全部服务。<br />5．主播在进行直播时，应当符合法律法规及相关政策的规定，遵守趣蜂直播不时发布的《趣蜂直播内容违规定义及处理方案》，确保表演过程中无任何不符合公序良俗、非法或侵害第三方合法权益的内容。主播应保证对上传或者发表于趣蜂直播的所有信息，包括但不限于文字、图片、音乐、电影、表演和录音录像制品等均享有完整的知识产权或者已经得到相关权利人的合法授权。如主播违反约定造成趣蜂直播遭受行政处罚或被第三人索赔等情况，主播应承担全部法律责任，并赔趣蜂直播损失。<br />6．主播需遵守诚实信用原则，不采取不正当竞争行为，不扰乱趣蜂直播的正常秩序，未经趣蜂直播同意不发布商业广告，不从事与在线才艺表演无关的活动，不得利用趣蜂直播提供的网络技术服务进行任何不利于趣蜂直播的行为。<br />7．主播如发现任何用户对其才艺表演存在误导性理解，或发表不正当评论时，主播应立即采取有效措施修正或停止其才艺表演行为，并及时通过有效方式向趣蜂直播进行通报，但趣蜂直播不对用户行为承担任何责任。
+                                    </p>
+                                    <h3>四、主播收益</h3>
+                                    <p>1．主播在趣蜂直播提供符合本协议规定的在线才艺表演，可以获得用户给予的奖赏，该奖赏由趣蜂直播支付给主播。<br />2．主播同意在使用趣蜂直播提供的服务时，向趣蜂直播支付一定金额的平台服务费，该服务费由趣蜂直播按比例从主播获得的用户奖赏中直接扣除。趣蜂直播会将具体扣除比例以不特定形式向主播明示，该比例以趣蜂直播通知为准。<br />3．有关收益的相关政策及规则详见趣蜂直播的系统公告及趣蜂直播以其他方式发出的通知、说明。主播同意所有结算数据以趣蜂直播统计数据为准，趣蜂直播保证数据的真实性。<br />4．主播开展本协议所涉之合作事项而获得的实际应得奖赏为税后收入，趣蜂直播将代缴法定税费。
+                                    </p>
+                                    <h3>五、非劳动关系</h3>
+                                    <p>主播与趣蜂直播或其关联公司之间不存在任何的劳动关系，趣蜂直播不承担主播的任何费用，包括但不限于社会保险、福利和医疗保险费用，主播也不享用趣蜂直播为其职员提供的各项福利政策。
+                                    </p>
+                                    <h3>六、主播隐私保护</h3>
+                                    <p>1．尊重个人隐私是趣蜂直播的重要政策。在未经授权的情况下，趣蜂直播不会公开或向第三方透露主播的个人真实资料。但如根据法律规定或政府部门的命令或以下情况下，趣蜂直播可不经授权而向相关部门或第三方公开或透露主播的信息。<br />2．主播应注意勿在使用趣蜂直播服务中透露自己的各类财产账户、银行卡、信用卡、第三方支付账户及对应密码等重要资料，也不可将自认为隐私的信息发表、上传或通过趣蜂直播的服务传播给其他人，否则由此产生的责任和损失由主播自行承担。
+                                    </p>
+                                    <h3>七、账号和密码</h3>
+                                    <p>您注册成为趣蜂直播用户后方可申请签约主播，而注册用户时的账号和密码是签约主播接受趣蜂直播服务的唯一身份凭证，由主播自行负责保管并进行符合安全要求的密码设置；主播应当对以其帐号进行的所有活动和事件负法律责任。主播如发现任何非法使用其账号或安全漏洞的情况，应立即向趣蜂直播履行告知义务。
+                                    </p>
+                                    <h3>八、其他</h3>
+                                    <p>1．未经趣蜂直播书面同意，您在本合同项下的权利义务不可转让。<br />2．如本协议中的任何条款因任何原因被判定为完全或部分无效或不具有执行力的，该无效或不具有执行力的条款将被最接近原条款意图的一项有效并可执行的条款所替代，并且本协议的其余条款仍应有效并且有执行力。<br />3．本协议项下趣蜂直播对于主播所有的通知均可通过网页公告、平台消息推送、电子邮件、手机短信或常规的信件传送等方式进行；该等通知于发送之日视为已送达收件人。
+                                    </p>
+                                    <p> </p>
+                                    <p class="cite">趣蜂直播官方运营部</p>
+                                    <p> </p>
+                                </div>
+                                <div class="contain" id="regulations">
+                                    <h2>趣蜂直播主播规章制度</h2>
+                                    <h3>一、概述</h3>
+                                    <p>    为维护趣蜂视频直播房间的基本秩序，促进秀场直播房间健康发展，特制定本条例，本条例适用于所有趣蜂视频主播。</p>
+                                    <h3>二、行为规范</h3>
+                                    <p>1、主播直播时，应保持面容整洁，稍化些淡妆再出境直播。</p>
+                                    <p>2、主播开播前应整理好房间的背景，不能杂乱无章，后面不能悬挂内衣裤之类的物品，保持干净整洁，直播时，不允许抽烟、喝酒。直播时候不得出现异性以及做私人事情或是在麦上吃饭。
+                                    </p>
+                                    <p>3、主播开播前应测试好安装的声卡以及红外视频和麦克风等设备，保证设备运作正常。</p>
+                                    <p>4、主播直播时候禁止无内容直播，如挂着放歌做别的事情，不与用户交流等。</p>
+                                    <p>5、主播在直播时，应充分展示自己的才艺去带动房间气氛，了解站上以及房间各项功能，指引玩家注册，引导消费者去充值。积极参加站上各种文艺活动，配合官方完成活动内容。
+                                    </p>
+                                    <h3>三、处罚条例</h3>
+                                    <h4>（一）严重违规行为（A类违规）</h4>
+                                    <p>严重违规行为是指涉政、涉黄、违规等严重扰乱趣蜂直播视频直播平台秩序的行为。</p>
+                                    <p>在视频直播中违反以下规定，构成严重违规，包括但不限于：</p>
+                                    <p>1、严禁发表反党反政府的言论，或做出侮辱诋毁党和国家的行为，如：</p>
+                                    <p>（1）违反宪法确定的基本原则的；</p>
+                                    <p>（2）危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；</p>
+                                    <p>（3）损害国家荣誉和利益的；</p>
+                                    <p>（4）煽动民族仇恨、民族歧视、破坏民族团结的；</p>
+                                    <p>（5）破坏国家宗教政策，宣扬邪教和封建迷信的；</p>
+                                    <p>（6）散布谣言，扰乱社会秩序，破坏社会稳定的；</p>
+                                    <p>（7）散布暴力、恐怖或者教唆犯罪的；</p>
+                                    <p>（8）煽动非法集会、结社、游行、示威、聚众扰乱社会秩序的；</p>
+                                    <p>2、（1）严禁与他人进行互相性挑逗形式的表演或行为。如相互抚摸敏感部位、进行能让人产生性幻想的动作、在床上以任何抚摸形式进行表演等。</p>
+                                    <p>（2）严禁通过各种方式裸露具有性特征的身体敏感部位。如展示女性胸部、男女性臀部、男女大腿内侧及生殖器官、穿透视装等。</p>
+                                    <p>（3）严禁直播带有色情、性暗示的游戏、录像、图片、绘画、设计类教学。</p>
+                                    <p>3、（1）严禁展示枪支管制刀具、进行高危表演。如晃动管制刀具、枪支、高仿真枪支、表演具有高度危险性的节目等。</p>
+                                    <p>（2）严禁表演危害他人人身安全的节目。如：殴打他人、以刀具威胁他人等。</p>
+                                    <p>（3）严禁传播毒品。如展示毒品样品、表演及传播毒品吸食或注射方式、讲解毒品制作过程等。</p>
+                                    <p>（4）严禁宣传传销机构、哄骗用户加入传销组织、或本人组织传销。</p>
+                                    <p>（5）严禁表演危害自身安全的节目，如自杀、自残。</p>
+                                    <p>以上A类违规内容违规者，主播出现严重违规行为，则扣除当月全部薪资，直播停止。同时冻结账号9999小时。</p>
+                                    <h4>（二）一般违规行为（B类违规）</h4>
+                                    <p>一般违规行为是指除严重违规行为外，影响程度较轻的扰乱趣蜂直播网络社区平台秩序的违规行为。</p>
+                                    <p>在视频直播中违反以下规定，构成一般违规，包括但不限于：</p>
+                                    <p>1、内容规定</p>
+                                    <p>（1）严禁组织以骚扰、戏弄为目的的网络电话；</p>
+                                    <p>（2）严禁演唱、播放带有色情、性暗示的音乐；</p>
+                                    <p>（3）严禁酒后直播表现耍酒疯、酣睡等醉态；</p>
+                                    <p>（4）严禁表演各种舞蹈。</p>
+                                    <p>（5）严禁进行具有性挑逗性质的表演或行为；</p>
+                                    <p>2、动作规定</p>
+                                    <p>严禁表演时出现挑动人们性欲、导致普通人腐化、堕落，而又没有任何艺术价值的内容；包括但不限于以下内容：</p>
+                                    <p>（1）严禁模仿各种低俗、色情动作或带有诱惑性、挑逗性表演的行为；</p>
+                                    <p>（2）严禁将镜头刻意聚焦于性敏感部位，或进行带有性暗示的抚摸、拉扯动作，或使用道具引起观众对性敏感部位的注意；</p>
+                                    <p>（3）严禁使用性用品作为表演道具；</p>
+                                    <p>严禁表演时使用道具模仿低俗、色情、性暗示的动作；</p>
+                                    <p>3、裸露规定</p>
+                                    <p>（1）严禁男性赤裸上身，女性露出乳房；</p>
+                                    <p>（2）严禁刻意露出胸罩、底裤。</p>
+                                    <p>（3）严禁穿着透明、情趣内衣、内衣外穿；</p>
+                                    <p>（4）严禁穿着过于暴露的衣服进行表演（包括但不限于：内衣、三点式露脐泳装、单穿抹胸、肉色紧身衣、三角牛仔裤、短于大腿1/3长度的下装）；</p>
+                                    <p>4、言论规定</p>
+                                    <p>（1）严禁刻意模仿各种带有性挑逗的声音；</p>
+                                    <p>（2）严禁刻意发表低俗涉黄言论，引导场内低俗互动；</p>
+                                    <p>（3）严禁以文字、语音、图片等任何形式宣传其他语音、视频平台。</p>
+                                    <p>以上B类违规内容违规者，按照违规次数给予处罚</p>
+                                    <p>累计次数    1次    2次   3次处罚时长与金额：</p>
+                                    <p>（违规1次）警告一次，关闭直播15分钟；</p>
+                                    <p>（违规2次）锁定主播帐号24小时，罚款600元；</p>
+                                    <p>（违规3次）锁定主播帐号9999小时，扣除当月所有薪资；</p>
+                                    <h4>（三）轻微违规行为（C类违规）</h4>
+                                    <p>轻微违规行为是指除严重违规行为和一般违规行为外，影响程度轻微的扰乱趣蜂直播视频直播平台秩序的违规行为。</p>
+                                    <p>在视频直播中违反以下规定，将构成轻微违规，包括但不限于：</p>
+                                    <p>1、严禁穿着带有中华人民共和国（包含港澳台）国家机关人员、军队的工作制服进行直播。包括警服、军服、工商制服、检察院制服、法院制服、城管制服、路政制服等。</p>
+                                    <p>2、严禁持续爆粗口、谩骂。</p>
+                                    <p>3、严禁进行其他类型违反趣蜂直播社区相关秩序规范的表演。</p>
+                                    <p>4、严禁在直播镜头前公然抽烟，喝酒。</p>
+                                    <p>以上C类违规内容违规者，按照违规次数给予处罚</p>
+                                    <p>累计次数    1次    2次   3次处罚时长与金额：</p>
+                                    <p>（违规1次）直播间弹窗警告一次；</p>
+                                    <p>（违规2次）锁定主播帐号24小时，处罚金额100元。</p>
+                                    <p>（违规3次）锁定主播帐号72小时，处罚金额500元。</p>
+                                    <p> </p>
+                                    <p>视频房间最低穿衣标准如图</p>
+                                    <p><img width="562" height="325"
+                                            src="/public/static/images/apply/dance_show_b22a8e1.png" /></p>
+                                    <p> </p>
+                                    <p>注：本管理制度由趣蜂直播官方制定，最终解释权归趣蜂直播所有，趣蜂直播有权对本制度进行修改并公示。</p>
+                                    <p> </p>
+                                    <p class="cite">趣蜂直播官方运营部</p>
+                                    <p> </p>
+                                </div>
+                                <div class="tips"></div>
+                            </div>
+                        </div>
+                        <div class="c4">
+                            <a href="index.html" class="disagree">我不同意（返回首页）</a>
+                            <a href="javascript:;" class="agree">我同意</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="content-body">
+                        <div class="c1"></div>
+                        <div class="c2">
+                            <span>1.申请协议</span>
+                            <span>2.提交资料</span>
+                            <span>3.官方审核</span>
+                        </div>
+                        <form action="" class="form-info">
+                            <span class="info-title">基本信息</span>
+                            <div class="info-item">
+                                <span class="edit-item">账号：</span>
+                                <span class="edit-content">
+                                    <span>123</span>
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="edit-item"><i>*</i>真实姓名：</span>
+                                <span class="edit-content">
+                                    <input type="text" name="realname" id="realname">
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="edit-item"><i>*</i>身份证号码：</span>
+                                <span class="edit-content">
+                                    <input type="text" name="idnum" id="idnum">
+                                    <em class="apply-tips">为保证工资正常发放，请务必填写与银行卡持卡人对应的真实身份证号码</em>
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="edit-item"><i>*</i>性别：</span>
+                                <span class="edit-content">
+                                    <input type="radio" name="sex" id="male"> <label for="male">男</label>
+                                    <input type="radio" name="sex" id="female"> <label for="female">女</label>
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="edit-item"><i>*</i>银行开户时预留手机号：</span>
+                                <span class="edit-content">
+                                    <input type="text" name="phone" id="phone">
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="edit-item"><i>*</i>常用qq：</span>
+                                <span class="edit-content">
+                                    <input type="text" name="qq" id="qq">
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="edit-item"><i>*</i>地址：</span>
+                                <span class="edit-content">
+                                    <input type="text" name="address" id="address">
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="edit-item">平时直播时间：</span>
+                                <span class="edit-content">
+                                    <input type="text" name="livetime" id="livetime">
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="edit-item">所属家族：</span>
+                                <span class="edit-content">
+                                    <select name="family" class="info-select">
+                                        <option value="0">保密</option>
+                                        <option value="1">男</option>
+                                        <option value="2">女</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <span class="info-title">财务信息</span>
+                            <div class="info-item">
+                                <span class="edit-item"><i>*</i>开户银行：</span>
+                                <span class="edit-content">
+                                    <select name="bank" class="info-select">
+                                        <option value="0">保密</option>
+                                        <option value="1">男</option>
+                                        <option value="2">女</option>
+                                    </select>
+
+                                </span>
+
+                            </div>
+
+                            <div class="info-item">
+                                <span class="edit-item">开户支行：</span>
+                                <span class="edit-content">
+                                    <input type="text" name="livetime" id="livetime">
+                                    <em
+                                        class="apply-tips">请填写真实开户行具体营业网点名称，如“浙江杭州玉泉支行”。至少需要精确到**省**市，否则不能保证工资发放到位，支付宝可不填</em>
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="edit-item"><i>*</i>银行卡/支付宝账号：</span>
+                                <span class="edit-content">
+                                    <input type="text" name="livetime" id="livetime">
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="edit-item"><i>*</i>开户人姓名：</span>
+                                <span class="edit-content">
+                                    <input type="text" name="livetime" id="livetime">
+                                </span>
+                            </div>
+                            <div class="info-item uploadID">
+                                <div class="front">
+                                    <div class="imageShow">
+                                        <img id="uploadfrontimg" src="./images/apply/id_img1.png" />
+                                        <span>手持身份证正面照</span>
+
+                                        <a href="javascript:;" class="frontUpload">上传图片
+                                            <input id="frontimg" type="file"
+                                                accept=".bmp,.jpg,.png,.jpeg,image/bmp,image/jpg,image/png,image/jpeg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="imageShow">
+                                        <img id="uploadbackimg" src="./images/apply/id_img2.png" />
+                                        <span>身份证背面照</span>
+
+                                        <a href="javascript:;" class="backUpload">上传图片
+                                            <input id="backimg" type="file" accept=".bmp,.jpg,.png,.jpeg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="upload-tips clear-fix">
+                                    请保证证件全部信息清晰无遮挡，照片格式支持JPG、PNG格式，大小不能超过2M
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="edit-content">
+                                    <input type="radio" name="" id="agree">
+                                    <label for="agree">我已阅读并同意<a href="javascript:;">《签约主播用户协议》</a> </label>
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <button type="submit" id="sm_materials"><a href="javascript:;"
+                                        class="check_sm">确认提交材料</a></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="check audit">
+                    <div class="content-body">
+                        <div class="c1"></div>
+                        <div class="c2">
+                            <span>1.申请协议</span>
+                            <span>2.提交资料</span>
+                            <span>3.官方审核</span>
+                        </div>
+                        <div class="c3">
+                            <img src="./images/apply/audit_tips.png" alt="">
+                            <span>
+                                您的申请已提交，官方会在24小时内处理您的申请，请耐心等待～<br>
+                                如有疑问，请联系官方客服QQ：2222153719
+                            </span>
+
+                            <div class="cc"><a class="cc1" href="index.html">我知道了(返回首页)</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fail audit">
+                    <div class="content-body">
+                        <div class="c1"></div>
+                        <div class="c2">
+                            <span>1.申请协议</span>
+                            <span>2.提交资料</span>
+                            <span>3.官方审核</span>
+                        </div>
+                        <div class="c3">
+                            <img src="./images/apply/fail_tips.png" alt="">
+                            <span>
+                                很遗憾，您的审核未通过</br>
+                                继续努力吧~
+                            </span>
+                            <div class="cc">
+                                <a href="index.html" class="cc2">我知道了(返回首页)</a>
+                                <a href="apply.html" class="cc1">再次申请</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 申请主播E -->
+
+    <!-- footerS -->
+    <footer>
+        <div class="xinglu-footer clear-fix">
+            <div class="xinglu-footer-nav">
+                <p>
+                    <a href="">帮助中心</a>
+                    <a href="">联系我们</a>
+                    <a href="">直播服务协议</a>
+                    <a href="">关于我们</a>
+                    <a href="">用户协议</a>
+                    <a href="">文明直播承诺书</a>
+                    <a href="">直播公约</a>
+                    <a href="">用户隐私手册</a>
+                </p>
+                <p>
+                    <a href="" class="clickstat">
+                        星鹿直播(浙ICP备20029795号)
+                    </a>
+                    |
+                    <a href="" class="clickstat">12318全国文化市场举报</a>
+                    |
+                    <a href="" class="clickstat">网上有害信息举报专区</a>
+                    |
+                    <a href="" class="clickstat">
+                        浙江省互联网违法和不良信息举报中心
+                    </a>
+                    |
+                    <a href="" class="clickstat">网络110报警服务</a>
+                    |
+                    <a href="" class="clickstat">邮箱举报：1181182018@qq.com</a>
+                </p>
+                <p>
+                    <a href="" class="clickstat">
+                        义乌市星汇网络科技有限公司
+                    </a>
+                </p>
+                <p>
+                    <a href="" class="clickstat">
+                        网络文化经营许可证：浙网文(2020)3282-148号
+                    </a>
+                </p>
+                <p>
+                    <a href="" class="clickstat">
+                        ©2020--2020 星鹿直播ywsxh.cn版权所有
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footerE -->
+</body>
+<script>
+    $(function () {
+        $(".left .notice").click(function () {
+            $("#notice").show();
+            $("#regulations").hide();
+            $(this).siblings().removeClass("selected");
+            $(this).addClass("selected");
+        });
+        $(".left .regulations").click(function () {
+            $("#regulations").show();
+            $("#notice").hide();
+            $(this).siblings().removeClass("selected");
+            $(this).addClass("selected")
+        });
+
+        // 上传图片
+
+        $(".frontUpload").click(function () {
+            $('#frontimg').click();
+        })
+        $(".backUpload").click(function () {
+            $('#backimg').click();
+        })
+
+        layui.use('upload', function () {
+            var upload = layui.upload;
+
+            //执行实例
+            var uploadInst = upload.render({
+                elem: '#frontimg', //绑定元素
+
+                url: 'http://live.ywsxh.cn/index.php/api/upload/uploadThumb', //上传接口
+
+                accept: 'images', //允许上传的文件类型
+                size: 50, //最大允许上传的文件大小,单位kb
+                done: function (res) {
+                    console.log(res)
+                },
+                error: function () {
+                    //请求异常回调
+                }
+            });
+        });
+        // 上传图片处理
+        // function preview(imgobj, previewImgId, defaultimgsrc) {
+        //     var accept = /^(.+)\.(jpg||jpeg||png)$/g;
+        //     var browserVersion = window.navigator.userAgent.toLowerCase();
+        //     var filesize = imgobj.files[0];
+        //     if (accept.test(imgobj.value)) {
+        //         //上传为可接受图片格式
+        //         if (imgobj.files) {
+        //             //上传了图片文件
+        //             if (filesize.size / 1024 / 1024 > 2) {
+        //                 $(previewImgId).attr("src", defaultimgsrc);
+        //                 alert('请上传2M以下的图片');
+        //             } else if (window.FileReader) { //html5实现文件上传,兼容ie10及以上 chrome，ff7+
+        //                 var reader = new FileReader();
+        //                 reader.onload = function () {
+        //                     $(previewImgId).attr("src", this.result);
+        //                 }
+        //                 reader.readAsDataURL(imgobj.files[0]);
+        //             }
+        //         } else if (browserVersion.indexOf("firefox") > -1) {
+        //             //不支持html5；兼容低版本火狐浏览器
+        //             $(previewImgId).attr("src", imgobj.files[0].getAsDataURL());
+
+        //         } else if (browserVersion.indexOf("msie") > -1) {
+        //             //ie浏览器
+        //             //在ie中使用滤镜进行预览图片，
+        //             imgobj.select();
+        //             if (browserVersion.indexOf("msie 9") > -1) {
+        //                 //ie9中必须将焦点从文本域移开，否则拒绝document.selection.createRange().text
+        //                 $(previewImgId).focus();
+        //                 //如果上传控件在框架中，imgobj.blur并不能达到目的，所以可以将任意元素聚焦来达到目的。
+        //             }
+        //         } else {
+        //             document.getElementById(previewImgId).setAttribute("src", imgobj.value);
+        //         }
+
+
+        //     } else {
+        //         alert("图片格式不符合，请选择jpg/png/gif/jpeg格式的图片");
+        //         imgobj.value = ""; //清空选中文件
+        //     }
+
+        // }
+
+        // $("#frontimg").change(function () {
+        //     preview(this, $("#uploadfrontimg"), "./images/apply/id_img1.png");
+        // })
+        // $("#backimg").change(function () {
+        //     preview(this, $("#uploadbackimg"), "./images/apply/id_img2.png");
+        // })
+
+        $('#agree').click(function () {
+            var $radio = $(this);
+            if ($radio.data('checked')) {
+                $radio.prop('checked', false);
+                $radio.data('checked', false);
+            } else {
+                $radio.prop('checked', true);
+                $radio.data('checked', true);
+            }
+        });
+
+        $(".agree").click(function () {
+            $(".notice").hide();
+            $(".info").show()
+        })
+        $(".check_sm").click(function () {
+            $(".notice").hide();
+            $(".info").hide();
+            $(".check").show();
+        })
+    })
+</script>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/jquery-ui/jquery-ui.js"></script>
+</head>
+
+<body style="background-color: #C1ECDE!important;">
+    <div class="person_info_wrap">
+        <div class="pi_box">
+            <div class="pi_left">
+                <div class="pi_avatar">
+                    <img src="./images/index/meinv1.jpg" alt="">
+                </div>
+                <ul class="pi_list">
+                    <li>
+                        <a href="#pi_info">个人信息</a>
+                    </li>
+                    <li>
+                        <a href="#icon_declare">图标说明</a>
+                    </li>
+                    <li>
+                        <a href="#car_pop">座驾/人气区</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pi_right">
+                <div id="pi_info">
+                    <div class="pi-title">基本资料</div>
+                    <ul class="info_list">
+                        <li>
+                            <span>用户名:</span><span> 皮卡丘 (55555)</span>
+                        </li>
+                        <li>
+                            <span>等级:</span><i class="user-level user-level_5"></i>
+                        </li>
+                        <li>
+                            <span>性别: 女</span>
+                        </li>
+                        <li>
+                            <span>生日：2002年12月24日</span>
+                        </li>
+                        <li>
+                            <span>年龄：18岁</span>
+                        </li>
+                        <li>
+                            <span>星座：摩羯座</span>
+                        </li>
+                        <li>
+                            <span>地区：</span>
+                            <a href="">升级更高权限可查看</a>
+                        </li>
+                        <li>
+                            <span> 签名：此人很懒，什么也没留下～</span>
+                        </li>
+                    </ul>
+                    <div class="pi-title">常用座驾</div>
+                    <div class="pi_car">
+                        <img src="./images/personinfo/nocar.png" alt="">
+                        <em class="nocar">穷困潦倒，暂无座驾</em>
+                        <span class="carname">座驾名称</span>
+                    </div>
+                </div>
+                <div id="icon_declare">
+                    nothing
+                </div>
+                <div id="car_pop">
+                    <div class="car_pop">
+                        <ul class="cp_list">
+                            <li><a href="#tdzj">TA的座驾</a></li>
+                            <li><a href="#gch">购车行</a></li>
+                        </ul>
+                        <a href="" class="use_explain">使用说明>></a>
+                        <div class="car_popwrap" id="tdzj">
+                            <div class="car_pop_box">
+                                <div class="cp_carshow">
+                                    <img src="./images/personinfo/snocar.png" alt="">  
+                                </div>
+                                <span class="topopcar">
+                                    TA还没有座驾
+                                </span>
+                                <span class="carname">座驾名称</span>
+                            </div>
+                        </div>
+                        <div class="car_popwrap" id="gch">
+                            <ul id="gch_list" class="gch_list">
+                                <li>
+                                    <div class="gch_car_pic">
+                                        <img src="./images/personinfo/car1.png" alt="">
+                                    </div>
+                                    <div class="gch_car_info">
+                                        <div class="gch_car_nm">
+                                            <span class="gch_car_name">座驾名称</span>
+                                            <span class="gch_car_money">座驾金额</span>
+                                        </div>
+                                        <div class="gch_buy">
+                                            <a href="" class="gch_car_buy">立即购买</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="gch_car_pic">
+                                        <img src="./images/index/meinv.jpg" alt="">
+                                    </div>
+                                    <div class="gch_car_info">
+                                        <div class="gch_car_nm">
+                                            <span class="gch_car_name">座驾名称</span>
+                                            <span class="gch_car_money">座驾金额</span>
+                                        </div>
+                                        <div class="gch_buy">
+                                            <a href="" class="gch_car_buy">立即购买</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="gch_car_pic">
+                                        <img src="./images/personinfo/nocar.png" alt="">
+                                        <span>大亨以上购买</span>
+                                        <a href="">马上升级</a>
+                                    </div>
+                                    <div class="gch_car_info">
+                                        <div class="gch_car_nm">
+                                            <span class="gch_car_name">座驾名称</span>
+                                            <span class="gch_car_money">座驾金额</span>
+                                        </div>
+                                        <a href="" class="lock">
+                                            <img src="./images/personinfo/lock.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="gch_car_pic">
+                                        <img src="./images/personinfo/nocar.png" alt="">
+                                        <span>大亨以上购买</span>
+                                        <a href="">马上升级</a>
+                                    </div>
+                                    <div class="gch_car_info">
+                                        <div class="gch_car_nm">
+                                            <span class="gch_car_name">座驾名称</span>
+                                            <span class="gch_car_money">座驾金额</span>
+                                        </div>
+                                        <a href="" class="lock">
+                                            <img src="./images/personinfo/lock.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="gch_car_pic">
+                                        <img src="./images/personinfo/nocar.png" alt="">
+                                        <span>大亨以上购买</span>
+                                        <a href="">马上升级</a>
+                                    </div>
+                                    <div class="gch_car_info">
+                                        <div class="gch_car_nm">
+                                            <span class="gch_car_name">座驾名称</span>
+                                            <span class="gch_car_money">座驾金额</span>
+                                        </div>
+                                        <a href="" class="lock">
+                                            <img src="./images/personinfo/lock.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(function () {
+        //个人信息
+        $(".car_pop").tabs();
+        var getIndexNum = sessionStorage.getItem("tabLiNum");
+        $(".pi_box").tabs({
+            active: getIndexNum
+        });
+
+        $(".pi_list li").on('click', function () {
+            var indexNum = $(this).index();
+            sessionStorage.setItem("tabLiNum", indexNum);
+        })
+        $(".topopcar").click(function () {
+            $(".car_pop").tabs({
+                active: 1
+            });
+        })
+    })
+</script>
+
+</html>

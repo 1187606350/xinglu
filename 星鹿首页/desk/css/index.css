@@ -1,0 +1,1670 @@
+html,
+body {
+    width: 100%;
+    height: auto;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.desk-wrap {
+    width: 100%;
+
+    display: table;
+
+}
+
+.desk-wrap .left {
+    width: 210px;
+    background-color: #E6F4EE;
+    overflow: hidden;
+    height: 100%;
+    display: table-cell;
+    vertical-align: top;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.left .left-wrap {
+    width: 200px;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #fff;
+}
+
+.desk-wrap .show-area {
+
+    background-color: #fff;
+    margin: 0 210px 0 210px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.desk-wrap .room-area {
+    height: 100%;
+    background-color: #fff;
+    margin-left: 210px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.desk-wrap .rank-area {
+    height: 100%;
+    background-color: #fff;
+    margin-left: 210px;
+}
+
+.desk-wrap .right {
+    width: 210px;
+    height: 100%;
+    display: table-cell;
+    padding-left: 10px;
+    background-color: #E6F4EE;
+    vertical-align: top;
+    overflow-y: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.right .right-wrap {
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+}
+.left .hall {
+    box-sizing: border-box;
+    width: 190px;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.left .hall b {
+    float: left;
+    font-size: 14px;
+    color: #666666;
+}
+
+.left .hall em {
+    float: right;
+    font-size: 14px;
+    width: 110px;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.left .hall span {
+    display: inline-block;
+    vertical-align: top;
+    color: #FF4A4A;
+}
+
+.left .list {
+    height: auto;
+}
+
+.list .item {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.list .item>a {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.item a img {
+    position: relative;
+    top: 1px;
+    height: 12px;
+    margin-right: 6px;
+}
+
+.item .itembox {
+    width: 100%;
+    height: auto;
+    display: none;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.itembox::-webkit-scrollbar {
+    width: 8px;
+    /*滚动条宽度*/
+}
+
+body::-webkit-scrollbar {
+    position: absolute;
+    width: 8px;
+    /*滚动条宽度*/
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color: #f0f0f0;
+    /*滚动条的背景颜色*/
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #d6d6d6;
+}
+
+.item .itembox ul {
+    width: 100%;
+}
+
+.itembox li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.itembox a {
+    display: block;
+    padding-left: 4px;
+    padding-right: 4px;
+    min-width: 70px;
+    height: 24px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgba(236, 236, 236, 0.9);
+    line-height: 24px;
+    font-size: 14px;
+    color: #666666;
+    outline: 0;
+}
+
+.itembox li a:hover {
+    background-color: #5AB88C;
+    color: #fff;
+}
+
+.itembox .active a {
+    background-color: #5AB88C;
+    color: #fff;
+}
+
+/* 人气区S */
+
+
+/* 人气区E*/
+/* 收藏的房间S */
+
+.enterRoom_recently {
+    width: 100%;
+    height: auto;
+}
+
+.right_content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.local_star {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 1;
+    position: relative;
+    background: #fff;
+  
+}
+
+.collection_room {
+    width: 100%;
+    height: auto;
+}
+
+.search_chatroom {
+    width: 100%;
+    height: 190px;
+    margin-top: 9px;
+    background: #E6F4EE;
+}
+.search_chatroom .search_box {
+    margin-top: 10px;
+    height: 190px;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.search-result-box {
+    width: 100%;
+    display: none;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.room-title {
+    position: relative;
+    font-size: 14px;
+    color: #666;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #efefef;
+}
+
+
+
+.room_box .empty {
+    padding-top: 38px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.empty .tips {
+    font-size: 14px;
+    color: #999999;
+    margin-top: 20px;
+}
+
+.room_box .room-list {
+    padding-top: 14px;
+    padding-left: 14px;
+}
+
+.room_box .room-list li {
+    width: 150px !important;
+    height: 230px !important;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 16px;
+    margin-right: 25px;
+    position: relative;
+
+}
+
+.room-list .liveitem {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.room_box .room-list .livepic {
+    width: 150px;
+    height: 150px;
+    transition: all 0.6s;
+    border-radius: 10px;
+}
+
+.room-list li .stealthinto {
+    height: 22px;
+    width: 70px;
+    position: absolute;
+    font-size: 14px;
+    right: 0;
+    bottom: 0;
+    background: #5AB88C;
+    border-radius: 10px 0px 10px 0px;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    z-index: 2000;
+}
+
+
+
+.room-list li .num {
+    position: absolute;
+    top: 126px;
+    width: 100%;
+    line-height: 24px;
+    font-size: 14px;
+    color: #ffffff;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%);
+    /*FireFox*/
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%);
+    /* Opear */
+    background: -ms-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    /*IE10及IE10+*/
+    border-radius: 0 0 10px 10px;
+}
+
+.room-list .num .hot {
+    position: relative;
+    margin-right: 5px;
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 12px;
+}
+
+.room_box .room-list .livepic:hover {
+    transform: scale(1.4);
+}
+
+.host_name {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    text-align: center;
+
+    color: #666666;
+}
+
+.host_id {
+    height: 14px;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: #B3B3B3;
+    margin-top: 11px;
+    margin-bottom: 8px;
+}
+
+
+.room_box .enter_room {
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 24px;
+    background: linear-gradient(0deg, #22BB88, #22E1A1);
+    border-radius: 12px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.roomchoose {
+    margin-top: 10px;
+}
+
+.roomchoose a {
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+    background: linear-gradient(0deg, #22BB88, #22E1A1);
+    border-radius: 12px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.roomchoose span {
+    display: inline-block;
+    width: 60px;
+    height: 22px;
+    background: #CBCBCB;
+    border-radius: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.morerank {
+    position: absolute;
+    right: 0;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #666;
+}
+
+.localStar-list {
+    max-height: 432px;
+    overflow-y: hidden;
+    
+}
+
+.localStar-list li {
+    width: 100%;
+    height: 22px;
+    margin-bottom: 5px;
+    line-height: 22px;
+}
+
+.localStar-list li span {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    font-size: 14px;
+    color: #666;
+    height: 15px;
+    text-align: center;
+    font-family: Microsoft YaHei;
+    font-weight: 600;
+    width: 20px;
+
+}
+.localStar-list li span img {
+    transform: scale(1.5);
+    object-fit: cover;
+}
+
+.localStar-list li a {
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+    font-size: 14px;
+    color: #666;
+    max-width: 125px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.localStar-list li i {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    transform: scale(0.8);
+    margin-left: 5px;
+}
+
+.localStar-list li:nth-child(n+4) span {
+    position: relative;
+    top: -1px;
+    margin-right: 3px;
+}
+
+.form-searchRoom {
+    position: relative;
+}
+
+.search-item {
+    margin-top: 12px;
+    width: 100%;
+    position: relative;
+}
+
+.search-item label {
+    height: 22px;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    color: #666666;
+
+}
+
+.search-item input {
+    width: 100px;
+    height: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.17);
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    padding-left: 9px;
+
+}
+
+.search-item .searchbutton {
+    border: none;
+    outline: none;
+    margin: 22px auto;
+    display: block;
+    width: 84px;
+    height: 24px;
+    background: linear-gradient(0deg, #22BB88, #22E1A1);
+    border-radius: 12px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-wrong-tips {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 86px;
+    font-size: 14px;
+    color: #e60101;
+    display: none;
+}
+
+
+
+
+.search-result-box::-webkit-scrollbar {
+    width: 3px;
+    /*滚动条宽度*/
+}
+
+.search-empty {
+    height: 500px;
+    position: relative;
+}
+
+.search-empty img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin: auto;
+}
+
+.search-empty span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 290px;
+    margin: auto;
+    font-size: 16px;
+    color: #343434;
+
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.search-result-room::-webkit-scrollbar-track {
+
+    border-radius: 10px;
+    /*滚动条的背景区域的圆角*/
+    background-color: #f0f0f0;
+    /*滚动条的背景颜色*/
+}
+
+/*定义滑块 内阴影+圆角*/
+.search-result-room::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /*滚动条的圆角*/
+    background-color: #d6d6d6;
+    /*滚动条的背景颜色*/
+}
+
+.return {
+    height: 20px;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.refresh {
+    height: 20px;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #59B88C;
+}
+
+.refresh img {
+    position: relative;
+    top: 2px;
+    margin-right: 4px;
+}
+
+/* 收藏的房间E */
+/* 推荐区S */
+.recommend-room {
+    overflow-y: auto;
+}
+
+
+.recommend-room::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+
+.recommend-room::-webkit-scrollbar-track {
+
+    border-radius: 10px;
+
+    background-color: #f0f0f0;
+
+}
+
+
+.recommend-room::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #d6d6d6;
+}
+
+/* 推荐区E */
+
+/* 本月最旺房间样式S */
+.rankbox {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.rankbox::-webkit-scrollbar {
+    width: 10px;
+    /*滚动条宽度*/
+
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.rankbox::-webkit-scrollbar-track {
+
+    border-radius: 10px;
+    /*滚动条的背景区域的圆角*/
+    background-color: #f0f0f0;
+    /*滚动条的背景颜色*/
+}
+
+/*定义滑块 内阴影+圆角*/
+.rankbox::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /*滚动条的圆角*/
+    background-color: #d6d6d6;
+    /*滚动条的背景颜色*/
+}
+
+.mostPopular-wrap {
+    width: 100%;
+    position: relative;
+    height: 1900px;
+    overflow: hidden;
+}
+
+.mostPopular-bg1 {
+    width: 100%;
+    height: 2302px;
+    left: 0;
+    top: 0;
+    background: url(../images/bg.png) no-repeat center;
+    position: absolute;
+    background-size: 100% 100%;
+}
+
+.mostPopular-bg2 {
+    width: 100%;
+    position: absolute;
+    top: 14px;
+    margin: auto;
+    height: 2489px;
+    background: url(../images/roombox.png) no-repeat center 0;
+    background-size: 100% 100%;
+}
+
+.mostPopular-content {
+    width: 976px;
+    height: 778px;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 40px 54px 0 50px;
+    top: 780px;
+    background: url(../images/border.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.mostPopular-table {
+    width: 873px;
+    table-layout: fixed;
+    margin: auto;
+}
+
+.mostPopular-table th {
+    height: 59px;
+    line-height: 59px;
+    font-size: 24px;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+    color: #343434;
+
+
+}
+
+.mostPopular-table td {
+    text-align: center;
+    height: 59px;
+    line-height: 59px;
+    border-top: 1px solid #D9D9D9;
+    font-size: 16px;
+    color: #4E4E4E;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 250px;
+
+}
+
+
+
+/* 本月最旺房间样式E */
+/* 房间消费排行样式S */
+.roomRank-wrap {
+    width: 100%;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background: url(../images/bg.png) center;
+    background-size: 100% 100%;
+}
+
+.roomRank-bg {
+    width: 100%;
+    margin: auto;
+    height: 1200px;
+    background: url(../images/xfbg.png) no-repeat center 0;
+    background-size: 100% 100%;
+    position: relative;
+
+}
+
+.roomRank-search {
+    position: relative;
+    top: -328px;
+    width: 978px;
+    height: 152px;
+    margin: auto;
+    background: url(../images/searchbox.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.search-content {
+    position: absolute;
+    left: 88px;
+    top: 50px;
+}
+
+.search-content span {
+    height: 29px;
+    font-size: 24px;
+    font-family: Microsoft YaHei;
+    font-weight: 600;
+    color: #5DB3E6;
+}
+
+.search-content input {
+    width: 160px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #67C3F4;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    font-size: 24px;
+    color: #4D4D4D;
+}
+
+.search-content button {
+    position: relative;
+    top: -6px;
+    display: inline-block;
+    vertical-align: top;
+    width: 114px;
+    height: 64px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.search-content button img {
+    width: 100%;
+}
+
+.search-tips {
+    font-size: 20px;
+    color: #5DB3E6;
+    margin-left: 100px;
+}
+
+.roomRank-content:before {
+    content: "";
+    width: 978px;
+    height: 180px;
+    position: absolute;
+    top: -105px;
+    left: 0px;
+    background: url(../images/t_top.png) no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.roomRank-content {
+    width: 978px;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px 54px 0 54px;
+    margin: auto;
+    top: -200px;
+    background: url(../images/t_body.png);
+    background-size: 100% 56px;
+    margin-bottom: 150px;
+}
+
+.roomRank-content:after {
+    content: "";
+    width: 978px;
+    height: 180px;
+    position: absolute;
+    bottom: -178px;
+    left: 0;
+    background: url(../images/t_foot.png) no-repeat 0 -10px;
+    background-size: 100% auto;
+}
+
+.roomRank-table {
+    width: 873px;
+    table-layout: fixed;
+    position: relative;
+    top: -100px;
+}
+
+.roomRank-table th {
+    height: 56px;
+    line-height: 56px;
+    font-size: 25px;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+    color: #343434;
+}
+
+.roomRank-table th:last-child {
+    width: 268px !important;
+}
+
+.roomRank-table td {
+    text-align: center;
+    height: 56px;
+    line-height: 56px;
+    border-top: 1px solid #D9D9D9;
+    font-size: 20px;
+    color: #4E4E4E;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+
+
+.rankbox-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 49px;
+    margin: auto;
+}
+
+.rankbox-footer p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.rankbox-footer p a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #343434;
+
+}
+
+.rankbox-footer p a:hover {
+    color: orange;
+}
+
+/* 房间消费排行样式E */
+/* 每日幸运星样式S */
+.dayluckStar-wrap {
+    width: 100%;
+    position: relative;
+    height: 3060px;
+    overflow: hidden;
+}
+
+.dayluck-bg1 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 3060px;
+    left: 0;
+    top: 0;
+    background: url(../images/dayluckbg.png) no-repeat center;
+    position: absolute;
+    background-size: cover;
+}
+
+.dayluck-bg2 {
+    width: 987px;
+    position: absolute;
+    top: 190px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 293px;
+    background: url(../images/luckrank.png) no-repeat center 0;
+
+    background-size: 100%;
+}
+
+.dayluck-bg3 {
+    width: 657px;
+    position: absolute;
+    top: 443px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 139px;
+    background: url(../images/luckbg.png) no-repeat center 0;
+    background-size: 100%;
+}
+
+.dayluck-bg4 {
+    width: 276px;
+    position: absolute;
+    height: 115px;
+    top: 522px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url(../images/luckstar.png) no-repeat center 0;
+    background-size: 100%;
+}
+
+
+.dayluckStar-wrap .rules {
+    box-sizing: border-box;
+    padding: 40px 29px 0 40px;
+    width: 954px;
+    position: relative;
+    height: 356px;
+    top: 845px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url(../images/rulesbg.png) no-repeat center 0;
+    background-size: 100%;
+}
+
+.dayluckStar-wrap .rules .intro span {
+    color: #F9716E;
+    font-size: 16px;
+    line-height: 36px;
+    word-break: break-all;
+    display: block;
+}
+
+.dayluckStar-wrap .rules .intro span em {
+    color: #F9716E;
+    font-size: 22px;
+}
+
+.dayluckStar-wrap .rules .crownintro {
+    margin-top: 10px;
+}
+
+.dayluckStar-wrap .rules .crownintro li {
+    float: left;
+    width: 220px;
+    height: 120px;
+    background: url(../images/ruleborder.png) no-repeat;
+    background-size: 100%;
+}
+
+.crwontype {
+    width: 96px;
+    float: left;
+    position: relative;
+}
+
+.crwontype img {
+    padding-left: 20px;
+    padding-top: 32px;
+    width: 75px;
+}
+
+.crownintro li:first-child .crwontype img {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+.crwontype .crown_name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 82px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.bname {
+    color: #DCCB55;
+}
+
+.jname {
+    color: #BDA347;
+}
+
+.yname {
+    color: #A8B1AC;
+}
+
+.tname {
+    color: #996B39;
+}
+
+.crowninfo {
+    float: left;
+    margin-left: -10px;
+    padding-top: 18px;
+}
+
+.crowninfo p {
+    margin-bottom: 12px;
+}
+
+.crowninfo p img {
+    width: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.crowninfo p span {
+    position: relative;
+    top: 2px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.dayluckrank {
+    box-sizing: border-box;
+    padding: 108px 29px 0 74px;
+    width: 954px;
+    position: relative;
+    height: 415px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.rank_list li {
+    width: 208px;
+    height: 250px;
+    float: left;
+    margin-right: 2px;
+    background: url(../images/listbg1.png) no-repeat;
+    background-size: 100%;
+}
+
+.crown_rank {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+
+.crown_rank img {
+    width: 38px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+
+}
+
+.crown_rank span {
+    position: relative;
+    top: -3px;
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    font-weight: 600;
+
+
+}
+
+.rank_list li:first-child .crown_rank img {
+    top: 3px;
+}
+
+.rank_table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.rank_table th {
+    height: 32px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #FFFFFF;
+
+
+}
+
+.rank_table tbody tr {
+    height: 33px;
+}
+
+.rank_table td {
+    height: 30px;
+    width: 50px;
+    line-height: 26px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+}
+
+.rank_table td a {
+    color: #4D4D4D;
+}
+
+.rank_table td:nth-child(2) {
+    max-width: 100px !important;
+    text-align: center;
+}
+
+.win_num {
+    top: 1100px;
+    background: url(../images/winNum.png) no-repeat center 0;
+    background-size: 100%;
+}
+
+
+.daylucklist {
+    height: 390px;
+    top: 1153px;
+    background: url(../images/dayluckwrap.png) no-repeat center 0;
+    background-size: 100%;
+}
+
+.hiswinlist {
+    top: 1205px;
+    background: url(../images/historylist.png) no-repeat center 0;
+    background-size: 100%;
+}
+
+.luck_list li {
+    width: 208px;
+    height: 250px;
+    float: left;
+    margin-right: 2px;
+    background: url(../images/listbg2.png) no-repeat;
+    background-size: 100%;
+}
+
+.luckstar_info {
+    width: 100%;
+    margin-top: 18px;
+    height: 150px;
+}
+
+.luckstar_info p {
+    padding-left: 30px;
+    height: 38px;
+    line-height: 33px;
+}
+
+.luckstar_info p span {
+    float: left;
+
+    width: 50px;
+    font-size: 14px;
+    height: 38px;
+    font-family: Microsoft YaHei;
+    color: #4D4D4D;
+    text-align: right;
+    font-weight: bold;
+
+}
+
+.luckstar_info p em {
+    float: left;
+    width: 110px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #4D4D4D;
+    font-weight: bold;
+}
+
+.luckstar_info p em a {
+    color: #4D4D4D;
+}
+
+.luck_list li:first-child .crown_rank img {
+    top: 3px;
+}
+
+/* 每日幸运星样式E */
+
+/* 消息提示样式S */
+
+.msg_alert {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: auto;
+    z-index: 9999;
+    display: none;
+}
+
+.msg_tips {
+    box-sizing: border-box;
+    position: absolute;
+    height: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 0px 13px 0px rgba(88, 88, 88, 0.17);
+    border-radius: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.msg_tips span {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.success_pattern {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    background: #5AD3AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success_pattern::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 8px;
+    border: 3px solid #fff;
+    border-right: none;
+    border-top: none;
+    transform: rotate(-45deg) translate(2px, -2px);
+}
+
+.failure_pattern {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #FF5454;
+    position: relative;
+}
+
+.failure_pattern::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.failure_pattern::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* 消息提示样式E */
+/* 弹窗守护S */
+/* 开通守护弹窗S */
+.guardType {
+    width: 590px;
+    height: 40px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.guardType li {
+    float: left;
+}
+
+.guardType li span {
+    width: 76px;
+    height: 19px;
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+    color: #656565;
+    line-height: 32px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.guardType .active span {
+    padding-bottom: 10px;
+    color: #53C9A3;
+    border-bottom: 3px solid #53C9A3;
+    ;
+
+}
+
+.guardbox {
+    margin-top: 20px;
+}
+
+.guardbox li {
+    margin-bottom: 15px;
+}
+
+.guardbox em {
+    width: 46px;
+    height: 19px;
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+    color: #4D4D4D;
+    line-height: 32px;
+
+}
+
+.guardtype_info {
+    margin-left: 10px;
+}
+
+.guardtype_info .guardavatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.object-nickname,
+.guard-price {
+    height: 18px;
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+    color: #4C4C4C;
+    line-height: 32px;
+}
+
+.object-id,
+.guard-tips {
+    height: 16px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+    color: #999999;
+    line-height: 32px;
+}
+
+.guard-price span {
+    color: #53C9A3;
+    font-size: 20px;
+}
+
+.guard_time {
+    display: inline-block;
+}
+
+.guard_time li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.guard_time li span {
+    display: inline-block;
+    width: 118px;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+    color: #808080;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #B2B2B2;
+    cursor: pointer;
+}
+
+.guard_time .active span {
+    background: url(../images/c_opentime.png) no-repeat -1px 0;
+}
+
+.guard_privilege {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.guard_privilege li {
+    width: 110px;
+    height: 130px;
+    background: #FFFFFF;
+    border: 1px solid #F7D492;
+    border-radius: 10px;
+    margin-right: 18px;
+    float: left;
+}
+
+.guard_privilege li span {
+    display: block;
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: normal;
+    color: #4C4C4C;
+    text-align: center;
+}
+
+.guard_privilege b {
+    display: inline-block;
+    width: 100%;
+    margin-top: 14px;
+    font-size: 16px;
+    color: #D79801;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.exclusive {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+}
+
+.exclusive:first-child {
+    background: url(../images/center/bgy.png) no-repeat center;
+}
+
+.exclusive:nth-child(2) {
+    background: url(../images/center/bgs.png) no-repeat center;
+}
+
+.exclusive .guard {
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    width: 30px;
+    height: 20px;
+}
+
+.exclusive .avatar {
+    position: relative;
+    top: 2px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.supercar {
+    margin-top: 7px;
+    margin-bottom: 13px;
+    text-align: center;
+    height: 40px;
+}
+
+.supercar img {
+    width: 84px;
+    height: 40px;
+}
+
+/* 开通守护弹窗E */
+
+/* 弹窗守护E */
+
+.desk_popupbox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: auto;
+    z-index: 9999;
+
+}
+
+.popup_box {
+    box-sizing: border-box;
+    min-width: 200px;
+    width: auto !important;
+    width: 200px;
+    min-height: 150px;
+    height: auto !important;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 0px 13px 0px rgba(88, 88, 88, 0.17);
+    border-radius: 10px;
+    z-index: 9999;
+    padding-bottom: 20px;
+}
+
+.popup_box .head_popup {
+    position: relative;
+    height: 40px;
+}
+
+.popup_box .head_popup span {
+    display: inline-block;
+    font-size: 16px;
+    width: 98px;
+    color: #343434;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+.popup_box .head_popup img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.content_popup {
+    min-height: 30px;
+    padding: 0 40px 20px 40px;
+
+}
+
+.content_popup .content_area img {
+    position: relative;
+    top: 8px;
+}
+
+.content_popup .content_area input {
+    display: block;
+    width: 228px;
+    height: 26px;
+    background: #F6F6F6;
+    border: 1px solid #CDCDCD;
+    border-radius: 13px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.content_popup .content_area span {
+    margin-bottom: 5px;
+    color: #343434;
+    font-size: 14px;
+
+}
+
+.footer_popup {
+    text-align: center;
+    margin-top: 19px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_popup .footer-button {
+    display: inline-block;
+    width: 68px;
+    height: 24px;
+    border-radius: 27px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer_popup .confirm {
+    color: #fff;
+    background: linear-gradient(0deg, #22BC89, #22DFA0);
+}
+
+.footer_popup .cancel {
+
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    color: #676767;
+}

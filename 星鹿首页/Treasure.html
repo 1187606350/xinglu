@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="./swiper/css/swiper.css">
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./swiper/js/swiper.js"></script>
+    <script src="./js/swiper-init.js"></script>
+</head>
+
+<body>
+    <!-- 通用头部S -->
+    <header class="clear-fix">
+        <div class="xinglu-header clear-fix">
+            <h1 id="xinglu-header-logo">
+                <a href="index.html">
+                    <img src="images/index/logo.png" alt="星鹿直播" />
+                </a>
+            </h1>
+            <div class="xinglu-header-nav">
+                <div class="xinglu-nav-item">
+                    <a class="headactive" href="index.html">首页</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="rankList.html">排行榜</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="shopMall.html">商城</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="download.html">下载客户端</a>
+                </div>
+            </div>
+            <div class="xinglu-header-search clear-fix">
+                <form action="">
+                    <input type="text" placeholder="搜索房间" />
+                    <button type="submit" class="btn-search"><img src="./images/index/sousuo.png" alt=""></button>
+                </form>
+            </div>
+            <div class="xinglu-header-right">
+                <div class="xinglu-header-control clearfix">
+                    <div class="xinglu-nav-right xinglu-nav-dailihoutai">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-daili-icon" src="./images/index/houtai.png" alt="">
+                            <span class="title">代理后台</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-onlineChongzhi">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-chongzhi-icon" src="./images/index/chongzhi.png"
+                                alt="">
+                            <span class="title">在线充值</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-login">
+                        <a class="xinglu-nav-title" href="#login" id="nav-login">
+                            <img class="xinglu-nav-icon xinglu-nav-login-icon" src="./images/index/login.png" alt="">
+                            <span class="xinglu-login">登录</span>
+                        </a>
+                        <i class="xinglu-nav-login-l">|</i>
+                        <a class="xinglu-nav-title" href="#register" id="nav-register">
+                            <span class="xinglu-register">注册</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 通用头部E -->
+    <div class="treasureWrap">
+        <div class="bxhd-banner">
+        </div>
+       
+        <div class="hd-rules">
+            <div class="prize-num">
+                <span>奖金池2000000000</span>
+            </div>
+            <div class="chimeney-left"></div>
+            <div class="chimeney-right"></div>
+            <div class="hd-rules-intro">
+                <p>任何用户每赠送出价值<span>250万金</span> 的幸运道具，即可获得宝箱1个；<br>
+                    宝箱数可累计叠加，所获宝箱不限当日开启，宝箱为<span>100%中奖！</span> </p>
+            </div>
+            <div class="hd-rules-tips">
+                奖池大奖=（奖金池*90%）-250万<br>
+                中大奖后，奖池重置成250万<br>
+                如:奖金池&gt;=250万时无法开启宝箱
+            </div>
+            <div class="hd-rules-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>奖池大奖</th>
+                            <th colspan="3">奖金池*90%-250万</th>
+                        </tr>
+                        <tr>
+                            <td>二等奖</td>
+                            <td>25000000钻石</td>
+                            <td>三等奖</td>
+                            <td>12500000钻石</td>
+                        </tr>
+                        <tr>
+                            <td>四等奖</td>
+                            <td>10000000钻石</td>
+                            <td>五等奖</td>
+                            <td>5000000钻石</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="hd-broadcast">
+            <div class="swiper-container" id="hd-broadcast">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/treasure/laba.png" alt="">
+                        <span class="boradcast-content">恭喜<span> 一只小胖丘(55555)</span>开启宝箱获得<em>1等奖-21999999钻石</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/treasure/laba.png" alt="">
+                        <span class="boradcast-content">恭喜<span> 一只小胖丘(55555)</span>开启宝箱获得<em>1等奖-21999999钻石</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/treasure/laba.png" alt="">
+                        <span class="boradcast-content">恭喜<span> 一只小胖丘(55555)</span>开启宝箱获得<em>1等奖-21999999钻石</em></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="prize-record record-rank">
+            <div class="record-title">
+                <span>大奖记录排行</span>
+            </div>
+            <table class="record-table">
+                <thead>
+                    <th>ID</th>
+                    <th>昵称</th>
+                    <th>中奖金额</th>
+                    <th>中奖时间</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+                    <tr>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                        <td>2020-10-01 10:03:22</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="prize-record latest-record">
+            <div class="record-title">
+                <span>最新中奖记录</span>
+            </div>
+            <table class="record-table latest-record-table">
+                <thead>
+                    <th>ID</th>
+                    <th>昵称</th>
+                    <th>中奖金额</th>
+                    <th>中奖时间</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+                    <tr>
+                        <td>2020-10-01 10:03:22</td>
+                        <td>星鹿</td>
+                        <td>18888</td>
+                        <td>1234567</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="bottom-info">
+            - 星鹿直播保留对本活动的最终解释权 -
+        </div>
+    </div>
+</body>
+
+</html>

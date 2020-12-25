@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>在线充值</title>
+    <link rel="stylesheet" href="swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="swiper/js/swiper.min.js"></script>
+    <script src="./js/swiper-init.js"></script>
+    <script src="js/recharge.js"></script>
+</head>
+
+<body>
+    <!-- 通用头部S -->
+    <header class="clear-fix">
+        <div class="xinglu-header clear-fix">
+            <h1 id="xinglu-header-logo">
+                <a href="index.html">
+                    <img src="images/index/logo.png" alt="星鹿直播" />
+                </a>
+            </h1>
+            <div class="xinglu-header-nav">
+                <div class="xinglu-nav-item">
+                    <a class="headactive" href="index.html">首页</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="rankList.html">排行榜</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="shopMall.html">商城</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="download.html">下载客户端</a>
+                </div>
+            </div>
+            <div class="xinglu-header-search clear-fix">
+                <form action="">
+                    <input type="text" placeholder="搜索房间" />
+                    <button type="submit" class="btn-search"><img src="./images/index/sousuo.png" alt=""></button>
+                </form>
+            </div>
+            <div class="xinglu-header-right">
+                <div class="xinglu-header-control clearfix">
+                    <div class="xinglu-nav-right xinglu-nav-dailihoutai">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-daili-icon" src="./images/index/houtai.png" alt="">
+                            <span class="title">代理后台</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-onlineChongzhi">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-chongzhi-icon" src="./images/index/chongzhi.png"
+                                alt="">
+                            <span class="title">在线充值</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-login">
+                        <a class="xinglu-nav-title" href="#login" id="nav-login">
+                            <img class="xinglu-nav-icon xinglu-nav-login-icon" src="./images/index/login.png" alt="">
+                            <span class="xinglu-login">登录</span>
+                        </a>
+                        <i class="xinglu-nav-login-l">|</i>
+                        <a class="xinglu-nav-title" href="#register" id="nav-register">
+                            <span class="xinglu-register">注册</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 通用头部E -->
+    <!-- 充值S -->
+    <div id="rechargeWrap">
+        <div class="recharge">
+            <div class="onlineCZ">
+                <div class="title">在线充值</div>
+                <div class="swiper-container" id="recharge-banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/recharge/banner1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/recharge/banner2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/recharge/banner3.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/recharge/banner4.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/recharge/banner5.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="accountBalance">
+                    您的账户余额：
+                    <span>0</span>
+                    星币
+                </div>
+                <div class="rechargeAmount">
+                    <ul>
+                        <li class="on">
+                            <div class="recharge-amount">
+                                <img class="xingbi-icon" src="./images/recharge/amount.png" alt="">
+                                <span>50,000</span>
+                            </div>
+                            <div class="recharge-price">
+                                <span>10元</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recharge-amount">
+                                <img class="xingbi-icon" src="./images/recharge/amount.png" alt="">
+                                <span>150,000</span>
+                            </div>
+                            <div class="recharge-price">
+                                <span>30元</span>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="recharge-amount">
+                                <img class="xingbi-icon" src="./images/recharge/amount.png" alt="">
+                                <span>250,000</span>
+                            </div>
+                            <div class="recharge-price">
+                                <span>50元</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recharge-amount">
+                                <img class="xingbi-icon" src="./images/recharge/amount.png" alt="">
+                                <span>500,000</span>
+                            </div>
+                            <div class="recharge-price">
+                                <span>100元</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recharge-amount">
+                                <img class="xingbi-icon" src="./images/recharge/amount.png" alt="">
+                                <span>1,000,000</span>
+                            </div>
+                            <div class="recharge-price">
+                                <span>200元</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recharge-amount">
+                                <img class="xingbi-icon" src="./images/recharge/amount.png" alt="">
+                                <span>15,000,000</span>
+                            </div>
+                            <div class="recharge-price">
+                                <span>300元</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recharge-amount">
+                                <img class="xingbi-icon" src="./images/recharge/amount.png" alt="">
+                                <span>25,000,000</span>
+                            </div>
+                            <div class="recharge-price">
+                                <span>500元</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recharge-amount">
+                                <img class="xingbi-icon" src="./images/recharge/amount.png" alt="">
+                                <span>400,00,000</span>
+                            </div>
+                            <div class="recharge-price">
+                                <span>800元</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recharge-amount">
+                                <img class="xingbi-icon" src="./images/recharge/amount.png" alt="">
+                                <span>500,000,000</span>
+                            </div>
+                            <div class="recharge-price">
+                                <span>1000元</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recharge-amount">
+                                <img class="xingbi-icon" src="./images/recharge/amount.png" alt="">
+                                <span>1,000,000,000</span>
+                            </div>
+                            <div class="recharge-price">
+                                <span>2000元</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recharge-amount">
+                                <img class="xingbi-icon" src="./images/recharge/amount.png" alt="">
+                                <span>1,500,000,000</span>
+                            </div>
+                            <div class="recharge-price">
+                                <span>3000元</span>
+                            </div>
+                        </li>
+                        <li class="editItem">
+                            <div class="recharge-amount">
+                                <img class="xingbi-icon" src="./images/recharge/amount.png" alt="">
+                                <input id="wealth_xingbi" value="0" type="text" disabled><span class="pay_coin">万</span>
+                            </div>
+
+                            <div class="recharge-price">
+                                <input type="number" class="pay_amount" placeholder="请输入"
+                                    oninput="if(value.length>6)value=value.slice(0,6)">
+                                <span class="pay-amount-unit">元</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rechargeAccount">
+                    充值账号：
+                    <span>一只皮卡丘</span>
+                    <a href="javascript:;" class="btn-switch-account">
+                        <img src="./images/recharge/swap.png" alt="">
+                        切换账号
+                    </a>
+                </div>
+
+                <div class="recharge-roomName">
+                    房间名称：
+                    <em>好玩的聊天室</em>
+                </div>
+                <div class="payWays">
+                    <div class="payTitle">支付方式</div>
+                    <div class="payType">
+                        <ul>
+                            <li class="on">
+                                <a id="wechatPay1">
+                                    <img src="./images/recharge/wechat-pay.png" alt="">
+                                    微信支付1
+                                </a>
+
+                            </li>
+                            <li>
+                                <a id="wechatPay2">
+                                    <img src="./images/recharge/wechat-pay.png" alt="">微信支付2</a>
+                            </li>
+                            <li>
+                                <a id="aliPay1">
+                                    <img class="alipay-icon" src="./images/recharge/zhifubao.png" alt="">支付宝支付1</a>
+                            </li>
+                            <li>
+                                <a id="aliPay2">
+                                    <img class="alipay-icon" src="./images/recharge/zhifubao.png" alt="">支付宝支付2</a>
+                            </li>
+                            <li>
+                                <a id="bankPay">
+                                    <img class="bankpay-icon" src="./images/recharge/card.png" alt="">银行卡支付</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chongzhi-btn">确认充值</div>
+            </div>
+            <div class="recharge-tips">
+                <h2>温馨提示</h2>
+                <p>
+                    1.
+                    支付完毕之后请一定等待“自动跳转回商家”页面，以避免到账延迟。
+                </p>
+                <p>2. 如有问题请联系官方客服。</p>
+                <p>
+                    3. 客服QQ：2222153719。
+                    <a href="">去联系</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 充值E -->
+    <!-- 切换账号弹窗S -->
+    <div class="switch-wrap" id="msg-wrap">
+        <div class="msg_box">
+            <div class="msg-title">
+                <span>切换账号</span>
+                <img class="closetitle" src="./images/recharge/guanbi.png" alt="">
+            </div>
+            <div class="msg-content">
+                <div class="switch-item">
+                    <input type="radio" name="account" class="switchradio" id="userid">
+                    <label for="userid"> <span>用户名(6666)</span></label>
+                </div>
+                <div class="switch-item">
+                    <input type="radio" name="account" class="switchradio" id="other">
+                    <label for="other"><input type="text" class="inputid" placeholder="输入他人ID">
+                        <!-- <em class="text-success">用户姓名</em> -->
+                        <em class="text-error">搜索用户不存在</em></label>
+                </div>
+
+            </div>
+            <div class="msg-footer">
+                <span class="toConfirm msg-button">提交</span>
+            </div>
+        </div>
+    </div>
+    <!-- 切换账号弹窗E -->
+    <!-- footerS -->
+    <footer class="clear-fix">
+        <div class="xinglu-footer clear-fix">
+            <div class="xinglu-footer-nav">
+                <p>
+                    <a href="">帮助中心</a>
+                    <a href="">联系我们</a>
+                    <a href="">直播服务协议</a>
+                    <a href="">关于我们</a>
+                    <a href="">用户协议</a>
+                    <a href="">文明直播承诺书</a>
+                    <a href="">直播公约</a>
+                    <a href="">用户隐私手册</a>
+                </p>
+                <p>
+                    <span>星鹿直播(浙ICP备20029795号)</span>
+                    |
+                    <span>12318全国文化市场举报</span>
+                    |
+                    <span>网上有害信息举报专区</span>
+                    |
+                    <span>浙江省互联网违法和不良信息举报中心</span>
+                    |
+                    <span>网络110报警服务</span>
+                    |
+                    <span>邮箱举报：1181182018@qq.com</span>
+                </p>
+                <h6>义乌市星汇网络科技有限公司</h6>
+                <h6>网络文化经营许可证：浙网文(2020)3282-148号</h6>
+                <h6>©2020--2020 星鹿直播ywsxh.cn版权所有</h6>
+            </div>
+        </div>
+    </footer>
+    <!-- footerE -->
+</body>
+
+</html>

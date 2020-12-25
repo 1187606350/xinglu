@@ -1,0 +1,2531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>星鹿排行榜</title>
+    <link rel="stylesheet" href="swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-ui/jquery-ui.js"></script>
+    <script src="swiper/js/swiper.min.js"></script>
+    <script src="js/swiper-init.js"></script>
+    <script src="js/ranklist.js"></script>
+</head>
+
+<body>
+    <!-- 通用头部S -->
+    <header class="clear-fix">
+        <div class="xinglu-header clear-fix">
+            <h1 id="xinglu-header-logo">
+                <a href="index.html">
+                    <img src="images/index/logo.png" alt="星鹿直播" />
+                </a>
+            </h1>
+            <div class="xinglu-header-nav">
+                <div class="xinglu-nav-item">
+                    <a class="headactive" href="index.html">首页</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="rankList.html">排行榜</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="shopMall.html">商城</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="download.html">下载客户端</a>
+                </div>
+            </div>
+            <div class="xinglu-header-search clear-fix">
+                <form action="">
+                    <input type="text" placeholder="搜索房间" />
+                    <button type="submit" class="btn-search">
+                        <img src="./images/index/sousuo.png" alt="" />
+                    </button>
+                </form>
+            </div>
+            <div class="xinglu-header-right">
+                <div class="xinglu-header-control clearfix">
+                    <div class="xinglu-nav-right xinglu-nav-dailihoutai">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-daili-icon" src="./images/index/houtai.png" alt="" />
+                            <span class="title">代理后台</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-onlineChongzhi">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-chongzhi-icon" src="./images/index/chongzhi.png"
+                                alt="" />
+                            <span class="title">在线充值</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-login">
+                        <a class="xinglu-nav-title" href="#login" id="nav-login">
+                            <img class="xinglu-nav-icon xinglu-nav-login-icon" src="./images/index/login.png" alt="" />
+                            <span class="xinglu-login">登录</span>
+                        </a>
+                        <i class="xinglu-nav-login-l">|</i>
+                        <a class="xinglu-nav-title" href="#register" id="nav-register">
+                            <span class="xinglu-register">注册</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 通用头部E -->
+    <!-- bannerS -->
+    <div class="bannerWrap">
+        <div class="banner">
+            <div class="swiper-container" id="common-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/banner/banner1.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner/banner2.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner/banner3.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner/banner4.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner/banner5.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- bannerE -->
+    <!-- 排行榜S -->
+    <div class="rankListWrap clear-fix">
+        <div class="xinglu-rank clear-fix">
+            <!-- 周期排行榜S -->
+            <div class="starAndRich clear-fix">
+                <div class="starRank">
+                    <div class="rankTitle">
+                        <img src="./images/rankList/star.png" alt="" />
+                        <span>明星榜</span>
+                    </div>
+                    <div class="cycle">
+                        <ul class="star-cycle">
+                            <li>
+                                <a class="active" href="#starDay">日</a>
+                            </li>
+                            <li>
+                                <a href="#starWeek">周</a>
+                            </li>
+                            <li>
+                                <a href="#starMonth">月</a>
+                            </li>
+                            <li>
+                                <a href="#starTotal">总榜</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="rankBox clear-fix top3bg" id="starDay">
+                        <li class="rank-item1">
+                            <a href="">
+                                <img class="gold" src="./images/rankList/gold.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv3.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/first.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span>
+                                    <i class="user-level user-level_0"></i>
+                                </span>
+                                <a href="" class="rank-yonghuID"><span>ID:11111111</span></a>
+                            </a>
+                        </li>
+                        <li class="rank-item2">
+                            <a href="">
+                                <img class="sliver" src="./images/rankList/sliver.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv3.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/second.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:121211111</a>
+                        </li>
+                        <li class="rank-item3">
+                            <a href="">
+                                <img class="bronze" src="./images/rankList/tong.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/third.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:55555</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452111111)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>11</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="rankBox clear-fix" id="starWeek">
+                    </ul>
+                    <ul class="rankBox clear-fix" id="starMonth">
+                        <li class="rank-item1">
+                            <a href="">
+                                <img class="gold" src="./images/rankList/gold.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/first.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span>
+                                    <i class="user-level user-level_0"></i>
+                                </span>
+                                <a href="" class="rank-yonghuID"><span>ID:11111111</span></a>
+                            </a>
+                        </li>
+                        <li class="rank-item2">
+                            <a href="">
+                                <img class="sliver" src="./images/rankList/sliver.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/second.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:12121</a>
+                        </li>
+                        <li class="rank-item3">
+                            <a href="">
+                                <img class="bronze" src="./images/rankList/tong.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/third.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:55555</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="rankBox clear-fix" id="starTotal">
+                        <li class="rank-item1">
+                            <a href="">
+                                <img class="gold" src="./images/rankList/gold.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/first.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span>
+                                    <i class="user-level user-level_0"></i>
+                                </span>
+                                <a href="" class="rank-yonghuID"><span>ID:11111111</span></a>
+                            </a>
+                        </li>
+                        <li class="rank-item2">
+                            <a href="">
+                                <img class="sliver" src="./images/rankList/sliver.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/second.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:12121</a>
+                        </li>
+                        <li class="rank-item3">
+                            <a href="">
+                                <img class="bronze" src="./images/rankList/tong.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/third.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:55555</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="richRank">
+                    <div class="rankTitle">
+                        <img src="./images/rankList/Rich.png" alt="" />
+                        <span>富豪榜</span>
+                    </div>
+                    <div class="cycle">
+                        <ul class="rich-cycle">
+                            <li>
+                                <a class="active" href="#dayRich">日</a>
+                            </li>
+                            <li>
+                                <a href="#weekRich">周</a>
+                            </li>
+                            <li>
+                                <a href="#monthRich">月</a>
+                            </li>
+                            <li>
+                                <a href="#totalRich">总榜</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="richBox clear-fix" id="dayRich">
+                        <li class="rank-item1">
+                            <a href="">
+                                <img class="gold" src="./images/rankList/gold.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/first.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span>
+                                    <i class="user-level user-level_0"></i>
+                                </span>
+                                <a href="" class="rank-yonghuID"><span>ID:11111111</span></a>
+                            </a>
+                        </li>
+                        <li class="rank-item2">
+                            <a href="">
+                                <img class="sliver" src="./images/rankList/sliver.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/second.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:12121</a>
+                        </li>
+                        <li class="rank-item3">
+                            <a href="">
+                                <img class="bronze" src="./images/rankList/tong.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/third.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:55555</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>11</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="richBox clear-fix" id="weekRich">
+                        <li class="rank-item1">
+                            <a href="">
+                                <img class="gold" src="./images/rankList/gold.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/first.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span>
+                                    <i class="user-level user-level_0"></i>
+                                </span>
+                                <a href="" class="rank-yonghuID"><span>ID:11111111</span></a>
+                            </a>
+                        </li>
+                        <li class="rank-item2">
+                            <a href="">
+                                <img class="sliver" src="./images/rankList/sliver.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/second.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:12121</a>
+                        </li>
+                        <li class="rank-item3">
+                            <a href="">
+                                <img class="bronze" src="./images/rankList/tong.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/third.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:55555</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="richBox clear-fix" id="monthRich">
+                        <li class="rank-item1">
+                            <a href="">
+                                <img class="gold" src="./images/rankList/gold.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/first.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span>
+                                    <i class="user-level user-level_0"></i>
+                                </span>
+                                <a href="" class="rank-yonghuID"><span>ID:11111111</span></a>
+                            </a>
+                        </li>
+                        <li class="rank-item2">
+                            <a href="">
+                                <img class="sliver" src="./images/rankList/sliver.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/second.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:12121</a>
+                        </li>
+                        <li class="rank-item3">
+                            <a href="">
+                                <img class="bronze" src="./images/rankList/tong.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/third.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:55555</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="richBox clear-fix" id="totalRich">
+                        <li class="rank-item1">
+                            <a href="">
+                                <img class="gold" src="./images/rankList/gold.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/first.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span>
+                                    <i class="user-level user-level_0"></i>
+                                </span>
+                                <a href="" class="rank-yonghuID"><span>ID:11111111</span></a>
+                            </a>
+                        </li>
+                        <li class="rank-item2">
+                            <a href="">
+                                <img class="sliver" src="./images/rankList/sliver.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/second.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:12121</a>
+                        </li>
+                        <li class="rank-item3">
+                            <a href="">
+                                <img class="bronze" src="./images/rankList/tong.png" alt="" />
+                                <img class="rank-avator" src="./images/rankList/meinv2.jpg" alt="" />
+                                <img class="rank-top3bg" src="./images/rankList/third.png" alt="" />
+                            </a>
+                            <a href="" class="rank-user">
+                                <span class="rank-nickName">一只皮卡丘</span>
+                                <span><i class="user-level user-level_0"></i></span>
+                            </a>
+                            <a href="" class="rank-yonghuID">ID:55555</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>4</span>
+                                <i class="user-level user-level_1"></i>
+                                <em class="clear-fix">
+                                    <b>一只皮卡丘asdasd</b>
+                                    <b>(ID:3452)</b>
+                                </em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 周期排行榜E -->
+            <!-- 攻城排行榜S -->
+            <div class="rank-siegeRank clear-fix">
+                <div class="rank-battleTitle">
+                    <img src="./images/rankList/battle.png" alt="" />
+                    <span>攻城排行榜</span>
+                </div>
+                <div class="rank-siegeShow">
+                    <div class="rank-santoNow">
+                        <img class="xingzhuang" src="./images/rankList/xingzhuang.png" alt="" />
+                        <p>当前城主</p>
+                        <h5>攻城时间：2020/9/18 15:54:34</h5>
+                        <h5>骑兵数量：23141415</h5>
+                        <img class="heart" src="./images/rankList/xingxing.png" alt="" />
+                        <div class="rank-battleObject">
+                            <a href="#" class="rank-object">
+                                <img src="./images/rankList/meinv2.jpg" alt="" />
+                                <div class="rank-userName">皮卡皮</div>
+                                <div class="rank-userID">ID:12412</div>
+                            </a>
+                            <a href="#" class="rank-object">
+                                <img src="./images/rankList/meinv2.jpg" alt="" />
+                                <div class="rank-userName">皮卡皮</div>
+                                <div class="rank-userID">ID:12412</div>
+                            </a>
+                        </div>
+                    </div>
+                    <table class="rank-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>城主信息</th>
+                                <th>骑兵数量(个)</th>
+                                <th>攻城时间</th>
+                                <th>守城时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <a href="">一号城主昵称</a><img src="./images/rankList/xinaixin.png" alt=""><a href="">一号城主夫人</a>
+                                </td>
+                                <td>42525678</td>
+                                <td>2020/05/15 12:41:43</td>
+                                <td>2020/5/23 13:54:23</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <a href="">一号城主昵称</a><img src="./images/rankList/xinaixin.png" alt=""><a href="">一号城主夫人</a>
+                                </td>
+                                <td>42525678</td>
+                                <td>2020/05/15 12:41:43</td>
+                                <td>2020/5/23 13:54:23</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <a href="">一号城主昵称</a><img src="./images/rankList/xinaixin.png" alt=""><a href="">一号城主夫人</a>
+                                </td>
+                                <td>42525678</td>
+                                <td>2020/05/15 12:41:43</td>
+                                <td>2020/5/23 13:54:23</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <a href="">一号城主昵称</a><img src="./images/rankList/xinaixin.png" alt=""><a href="">一号城主夫人</a>
+                                </td>
+                                <td>42525678</td>
+                                <td>2020/05/15 12:41:43</td>
+                                <td>2020/5/23 13:54:23</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <a href="">一号城主昵称</a><img src="./images/rankList/xinaixin.png" alt=""><a href="">一号城主夫人</a>
+                                </td>
+                                <td>42525678</td>
+                                <td>2020/05/15 12:41:43</td>
+                                <td>2020/5/23 13:54:23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 攻城排行榜E -->
+            <!-- 礼物排行榜S -->
+            <div class="rank-giftList clear-fix">
+                <div class="rank-giftTitle">
+                    <img src="./images/rankList/gift.png" alt="" />
+                    <span>礼物榜</span>
+                    <em class="rank-week">
+                        <b class="active" id="weekThis">本周</b>
+                        |
+                        <b id="weekLast">上周</b>
+                    </em>
+                </div>
+                <div class="rank-giftShow">
+                    <ul id="thisWeek">
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv2.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv2.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv2.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv2.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv2.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv2.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv2.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv2.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv2.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv2.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv2.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv2.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv2.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv2.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv2.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv2.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul id="lastWeek" style="display: none;">
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv3.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv3.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv3.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv3.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv3.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv3.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                           
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv3.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv3.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                          
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv3.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv3.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                             
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv3.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv3.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                             
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv3.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv3.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="rank-jlRank rank-commongift">
+                            <a href="#" class="jinlu">
+                                <span class="jinluPic">
+                                    <img src="./images/index/meinv3.jpg" alt="" />
+                                </span>
+                                <em>银鹭</em>
+                            </a>
+                            <ul class="thisweekRank">
+                                <li>
+                                    <a href="" class="rank-giftOne">
+                                        <div class="rank-giftRank">1</div>
+                                        <div class="rank-userInfo">
+                                            <img class="giftGold" src="./images/rankList/giftGold.png" alt="" />
+                                            <img class="gift-avatar" src="./images/index/meinv3.jpg" alt="" />
+                                            <img class="gift-first" src="./images/rankList/giftOne.png" alt="" />
+                                        </div>
+                                        <div class="rank-giftUser clear-fix">
+                                            <div class="rank-userMing">
+                                                一只皮卡丘aaaaaaa
+                                            </div>
+                                            <div class="rank-giftNum">
+                                                获得：222222个
+                                            </div>
+                                            <i class="user-level user-level_4"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="rank-giftMore">
+                                    <a href="">
+                                        <span class="ranknum">2</span>
+                                        <span class="actor_level_spec">
+                                            <i class="user-level user-level_3"></i>
+                                        </span>
+                                        <span class="rank-userMing">
+                                            <span>一只皮卡丘</span>
+                                        </span>
+                                        <span class="rank-giftNum">
+                                            获得：2222个
+                                        </span>
+                                    </a>
+                                </li>
+                        
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 礼物排行榜E -->
+        </div>
+    </div>
+    <!-- 排行榜E -->
+    <!-- footerS -->
+    <footer>
+        <div class="xinglu-footer clear-fix">
+            <div class="xinglu-footer-nav">
+                <p>
+                    <a href="">帮助中心</a>
+                    <a href="">联系我们</a>
+                    <a href="">直播服务协议</a>
+                    <a href="">关于我们</a>
+                    <a href="">用户协议</a>
+                    <a href="">文明直播承诺书</a>
+                    <a href="">直播公约</a>
+                    <a href="">用户隐私手册</a>
+                </p>
+                <p>
+                    <a href="" class="clickstat">
+                        星鹿直播(浙ICP备20029795号)
+                    </a>
+                    |
+                    <a href="" class="clickstat">12318全国文化市场举报</a>
+                    |
+                    <a href="" class="clickstat">网上有害信息举报专区</a>
+                    |
+                    <a href="" class="clickstat">
+                        浙江省互联网违法和不良信息举报中心
+                    </a>
+                    |
+                    <a href="" class="clickstat">网络110报警服务</a>
+                    |
+                    <a href="" class="clickstat">
+                        邮箱举报：1181182018@qq.com
+                    </a>
+                </p>
+                <p>
+                    <a href="" class="clickstat">
+                        义乌市星汇网络科技有限公司
+                    </a>
+                </p>
+                <p>
+                    <a href="" class="clickstat">
+                        网络文化经营许可证：浙网文(2020)3282-148号
+                    </a>
+                </p>
+                <p>
+                    <a href="" class="clickstat">
+                        ©2020--2020 星鹿直播ywsxh.cn版权所有
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footerE -->
+</body>
+
+</html>

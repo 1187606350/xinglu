@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-ui/jquery-ui.js"></script>
+    <script src="swiper/js/swiper.min.js"></script>
+    <!-- <script src="js/jqueryeasing.min.js"></script> -->
+    <script src="js/swiper-init.js"></script>
+    <script src="js/shopMall.js"></script>
+</head>
+
+<body>
+    <!-- 通用头部S -->
+    <header class="clear-fix">
+        <div class="xinglu-header clear-fix">
+            <h1 id="xinglu-header-logo">
+                <a href="index.html">
+                    <img src="images/index/logo.png" alt="星鹿直播" />
+                </a>
+            </h1>
+            <div class="xinglu-header-nav">
+                <div class="xinglu-nav-item">
+                    <a class="headactive" href="index.html">首页</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="rankList.html">排行榜</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="shopMall.html">商城</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="download.html">下载客户端</a>
+                </div>
+            </div>
+            <div class="xinglu-header-search clear-fix">
+                <form action="">
+                    <input type="text" placeholder="搜索房间" />
+                    <button type="submit" class="btn-search"><img src="./images/index/sousuo.png" alt=""></button>
+                </form>
+            </div>
+            <div class="xinglu-header-right">
+                <div class="xinglu-header-control clearfix">
+                    <div class="xinglu-nav-right xinglu-nav-dailihoutai">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-daili-icon" src="./images/index/houtai.png" alt="">
+                            <span class="title">代理后台</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-onlineChongzhi">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-chongzhi-icon" src="./images/index/chongzhi.png"
+                                alt="">
+                            <span class="title">在线充值</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-login">
+                        <a class="xinglu-nav-title" id="nav-login">
+                            <img class="xinglu-nav-icon xinglu-nav-login-icon" src="./images/index/login.png" alt="">
+                            <span class="xinglu-login">登录</span>
+                        </a>
+                        <i class="xinglu-nav-login-l">|</i>
+                        <a class="xinglu-nav-title" id="nav-register">
+                            <span class="xinglu-register">注册</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 通用头部E -->
+    <!-- bannerS -->
+    <div class="bannerWrap clear-fix">
+        <div class="banner">
+            <div class="swiper-container" id="common-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/banner/banner1.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner/banner2.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner/banner3.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner/banner4.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner/banner5.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- bannerE -->
+    <!-- SHOPMALL S -->
+    <div class="xinglu-shopWrap clear-fix">
+        <div class="shopMall clear-fix">
+            <ul class="shopChoose">
+                <li class="active"><a href="#vip">会员</a></li>
+                <li><a href="#zuojia">座驾</a> </li>
+                <li><a href="#Liang">靓号</a> </li>
+            </ul>
+
+             <div id="vip" class="xinglu-shop">
+                <div class="shopTitle">
+                    <img src="./images/shopMall/vip.png" alt="">
+                    至尊VIP特权
+                </div>
+                <div class="tequanContent clear-fix">
+                    <div class="tequanType clear-fix">
+                        <ul>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/VIP1.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+                                <h5>尊享至尊VIP身份标识</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/yansedangan.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+                                <h5>尊享专属炫彩昵称</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/paixushang.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+                                <h5>房间排位靠前</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/shuohua.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+                                <h5>直播间防禁言</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/jinru.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+                                <h5>可进入已达到观众人 数上限的房间</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/zuojiaxianxing.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+
+                                <h5>可免费获得七天至尊 VIP专属座驾</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/zishutongji.png" alt="" />
+                                    <p>聊天字数增加到100字</p>
+                                </span>
+
+                                <h5>尊享至尊VIP身份标识</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/kick-user2.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+                                <h5>防止被踢出房间</h5>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="openVip" id="openSvip">开通至尊VIP</a>
+                </div>
+                <div class="shopTitle">
+                    <img src="./images/shopMall/vip.png" alt="">
+                    VIP特权
+                </div>
+                <div class="tequanContent clear-fix">
+                    <div class="tequanType clear-fix">
+                        <ul>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/VIP1.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+                                <h5>尊享至尊VIP身份标识</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/yansedangan.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+                                <h5>尊享专属炫彩昵称</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/paixushang.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+                                <h5>房间排位靠前</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/shuohua.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+                                <h5>直播间防禁言</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/jinru.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+                                <h5>可进入已达到观众人 数上限的房间</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/zuojiaxianxing.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+
+                                <h5>可免费获得七天至尊 VIP专属座驾</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/zishutongji.png" alt="" />
+                                    <p>聊天字数增加到100字</p>
+                                </span>
+
+                                <h5>尊享至尊VIP身份标识</h5>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="./images/shopMall/kick-user2.png" alt="" />
+                                    <p>标识勋章</p>
+                                </span>
+                                <h5>防止被踢出房间</h5>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="openVip" id="openVip">开通VIP</div>
+                </div>
+            </div>
+            <div id="zuojia" class="xinglu-car">
+                <div class="shop-carTitle">
+                    <img src="./images/shopMall/haohua.png" alt="">
+                    豪华座驾
+                </div>
+                <div class="shop-haohuaWrap clear-fix carChoose">
+                    <ul>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shop-carTitle">
+                    <img src="./images/shopMall/free.png" alt="">
+                    签到分享座驾
+                </div>
+                <div class="shop-shareWrap clear-fix carChoose">
+                    <ul>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shop-carTitle">
+                    <img src="./images/shopMall/chongzhi.png" alt="">
+                    充值特享座驾
+                </div>
+                <div class="shop-chongzhiWrap clear-fix carChoose">
+                    <ul>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shop-carTitle">
+                    <img src="./images/shopMall/gameStar.png" alt="">
+                    游戏达人座驾
+                </div>
+                <div class="shop-gameWrap clear-fix carChoose">
+                    <ul>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shop-carTitle">
+                    <img src="./images/shopMall/weekStar.png" alt="">
+                    周星专属座驾
+                </div>
+                <div class="shop-weekWrap clear-fix carChoose">
+                    <ul>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shop-carTitle">
+                    <img src="./images/shopMall/honor.png" alt="">
+                    荣耀族长座驾
+                </div>
+                <div class="shop-honorWrap clear-fix carChoose">
+                    <ul>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shop-carTitle">
+                    <img src="./images/shopMall/activity.png" alt="">
+                    活动座驾
+                </div>
+                <div class="shop-activeWrap clear-fix carChoose">
+                    <ul>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                        <li>
+                            <div class="shop-carPic">
+                                <img class="shop-carStage" src="./images/shopMall/show.png" alt="">
+                                <img class="shop-carself" src="./images/shopMall/car.png" alt="" />
+                                <div class="shop-carName">跑车</div>
+                            </div>
+
+                            <div class="shop-carPrice">29000000星币</div>
+                            <div class="shop-buyButton">购买并启用</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="Liang" class="shop-liangHao">
+                <div class=" shop-liangBox">
+                <div class="shop-liangIntro">
+                    <img class="shop-wenti" src="./images/shopMall/wenti.png" alt="">
+                    <span>什么是靓号</span>
+                    <input type="text" placeholder="输入靓号搜索" />
+                    <button type="submit" class="shop-liang-search"><img class="shop-liangsou"
+                            src="./images/shopMall/sousuo.png" alt=""></button>
+                </div>
+                <p><img class="shop-gou" src="./images/shopMall/gou.png" alt=""> 靓号是区别用户与用户注册获得的ID序列号码。</p>
+                <p><img class="shop-gou" src="./images/shopMall/gou.png" alt="">
+                    靓号永久有效，但两个月未登录过的用户的靓号将自动被系统回收。
+                </p>
+                <p><img class="shop-gou" src="./images/shopMall/gou.png" alt="">靓号在观众列表显示靓号标识。</p>
+                <p><img class="shop-gou" src="./images/shopMall/gou.png" alt="">靓号在观众列表排位优先。</p>
+                <p><img class="shop-gou" src="./images/shopMall/gou.png" alt="">靓号发言时会携带尊贵靓号ID。</p>
+               
+            </div> 
+            <div class="shop-liangBox clear-fix">
+                <div class="shop-liangType">
+                    <b>2</b>
+                    <span>位靓号</span>
+                    <em><img class="shop-changeLiang" src="./images/shopMall/huanyizu.png" alt=""> 换一组</em>
+                </div>
+                <div class="shop-liangChoose">
+                    <ul>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">55</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">55</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">55</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">66</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">77</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">88</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">99</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shop-liangBox clear-fix">
+                <div class="shop-liangType">
+                    <b>3</b>
+                    <span>位靓号</span>
+                    <em><img class="shop-changeLiang" src="./images/shopMall/huanyizu.png" alt=""> 换一组</em>
+                </div>
+                <div class="shop-liangChoose">
+                    <ul>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">666</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">666</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">666</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">666</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shop-liangBox clear-fix">
+                <div class="shop-liangType">
+                    <b>4</b>
+                    <span>位靓号</span>
+                    <em><img class="shop-changeLiang" src="./images/shopMall/huanyizu.png" alt=""> 换一组</em>
+                </div>
+                <div class="shop-liangChoose">
+                    <ul>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">2333</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">2333</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shop-liangBox clear-fix">
+                <div class="shop-liangType">
+                    <b>5</b>
+                    <span>位靓号</span>
+                    <em><img class="shop-changeLiang" src="./images/shopMall/huanyizu.png" alt=""> 换一组</em>
+                </div>
+                <div class="shop-liangChoose">
+                    <ul>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">88888</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">88888</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">88888</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">88888</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shop-liangBox clear-fix">
+                <div class="shop-liangType">
+                    <b>6</b>
+                    <span>位靓号</span>
+                    <em><img class="shop-changeLiang" src="./images/shopMall/huanyizu.png" alt=""> 换一组</em>
+                </div>
+                <div class="shop-liangChoose">
+                    <ul>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">666666</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">666666</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop-liangInfo">
+                                <div class="shop-liangNum">666666</div>
+                                <div class="shop-liangPrice">
+                                    29000000星币
+                                </div>
+                            </div>
+                            <div class="shop-liangSelect">
+                                <a class="shop-giveAway">赠送</a>
+                                <a class="shop-buy">购买</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>      
+        </div>
+    </div>
+    </div>
+    <div id="mask"></div>
+    <div class="search-liang" id="search_no_result">
+        <div class="buy_tips clear-fix">
+            <em><img src="./images/shopMall/sad.png" alt=""></em>
+            <span>该靓号不存在~</span>
+        </div>
+    </div>
+    <div id="search_result" class="shop-popupwrap clear-fix">
+        <div class="shop-buyLiang shop-searchLiang">
+            <h3>
+                <span>搜索结果</span>
+                <img id="closebuyliang" class="closetitle" src="./images/shopMall/close.png" alt="">
+            </h3>
+            <div class="search-liangInfo">
+                <div class="search-liangNum">556666</div>
+                <div class="search-liangPrice">
+                    29000000星币
+                </div>
+            </div>
+            <div class="search-footer">
+                <a class="search_confirm" id="buyliang_button" href="">购买</a> 
+            <a class="search_confirm" id="sendliang_button" href="">赠送</a> 
+            </div>
+            
+        </div>
+    </div>
+    <div id="buyLiangWrap" class="shop-popupwrap clear-fix">
+        <div class="shop-buyLiang">
+            <h3>
+                <span>购买靓号</span>
+                <img id="closebuyliang" class="closetitle" src="./images/shopMall/close.png" alt="">
+            </h3>
+            <div class="shop-liang-section">
+                <div class="shop-liang-main">
+                    <div class="shop-liangShow">55</div>
+                </div>
+                <div class="shop-liang-side">
+                    <div class="shop-liang-hao">55</div>
+                    <p>
+                        <em>时&nbsp;&nbsp;&nbsp;长:</em>
+                        <span>永久</span>
+                    </p>
+                    <p>
+                        <em>活动价:</em>
+                        <span>2800000钻石</span>
+                    </p>
+                    <p>
+                        <em>返&nbsp;&nbsp;&nbsp;还:</em>
+                        <span>1000000钻石</span>
+                    </p>
+                </div>
+            </div>
+            <a class="buyconfirm" href="">确定</a>
+        </div>
+    </div>
+    <div id="giveLiangWrap" class="shop-popupwrap clear-fix" >
+        <div class="shop-buyLiang shop-giveLiang">
+            <h3>
+                <span>赠送靓号</span>
+                <img id="closegiveliang" class="closetitle" src="./images/shopMall/close.png" alt="">
+            </h3>
+            <div class="shop-liang-section shop-give-section">
+                <div class="shop-liang-main">
+                    <div class="shop-liangShow">55</div>
+                </div>
+                <div class="shop-liang-side liang-Giveside">
+                    <span class="shop-liang-hao">556666</span>
+                    <input class="give-search" type="text" placeholder="请输入赠送用户ID" name="" id="" />
+                    <div class="give-nickname text-success text-fail">被赠送者昵称</div>
+                    <p>
+                        <em>时&nbsp;&nbsp;&nbsp;长:</em>
+                        <span>永久</span>
+                    </p>
+                    <p>
+                        <em>活动价:</em>
+                        <span>2800000钻石</span>
+                    </p>
+                    <p>
+                        <em>返&nbsp;&nbsp;&nbsp;还:</em>
+                        <span>1000000钻石</span>
+                    </p>
+                </div>
+            </div>
+            <a class="buyconfirm" href="">确定</a>
+        </div>
+    </div>
+    <div id="buyCarWrap" class="shop-popupwrap clear-fix">
+        <div class="shop-buyLiang shop-buyCar">
+            <h3>
+                <span>购买座驾</span>
+                <img id="closebuycar" class="closetitle" src="./images/shopMall/close.png" alt="">
+            </h3>
+            <div class="shop-liang-section shop-car-section">
+                <div class="shop-liang-main shop-car-main">
+                    <div class="shop-carShow">
+                        <img class="shop-showStage" src="./images/shopMall/buyshowstage.png" alt="">
+                        <img class="shop-car" src="./images/shopMall/car.png" alt="" />
+                    </div>
+                </div>
+                <div class="shop-liang-side shop-car-side">
+                    <div class="shop-liang-hao shop-car-hao">跑车</div>
+                    <p>
+                        <em>时&nbsp;&nbsp;&nbsp长:</em>
+                        <span>永久</span>
+                    </p>
+                    <p>
+                        <em>活动价:</em>
+                        <span>2800000钻石</span>
+                    </p>
+                    <p>
+                        <em>原&nbsp;&nbsp;&nbsp;价:</em>
+                        <span class="lineThrough">1000000钻石</span>
+                    </p>
+                </div>
+            </div>
+            <a class="buyAndUse" href="">购买并启用</a>
+        </div>
+    </div>
+    <div id="openVipWrap" class="shop-popupwrap clear-fix">
+        <div class="shop-buyLiang shop-buyCar">
+            <h3>
+                <span>开通VIP</span>
+                <img id="closevip" class="closetitle" src="./images/shopMall/close.png" alt="">
+            </h3>
+            <div class="shop-liang-section shop-vip-section">
+                <div class="shop-vip-main">
+                    <div class="shop-vipShow">
+                        <img class="shop-showStage" src="./images/shopMall/normal_vip.png" alt="">
+                    </div>
+                </div>
+                <div class="shop-liang-side shop-vip-side">
+                    <p>
+                        <em>时&nbsp;&nbsp;&nbsp长:</em>
+                        <span>永久</span>
+                    </p>
+                    <p>
+                        <em>活动价:</em>
+                        <span>2800000钻石</span>
+                    </p>
+                    <p>
+                        <em>原&nbsp;&nbsp;&nbsp;价:</em>
+                        <span class="lineThrough">1000000钻石</span>
+                    </p>
+                </div>
+            </div>
+            <a class="buyAndUse" href="">确定</a>
+        </div>
+    </div>
+    <div id="openSVipWrap" class="shop-popupwrap clear-fix">
+        <div class="shop-buyLiang shop-buyCar">
+            <h3>
+                <span>开通VIP</span>
+                <img id="closeSvip" class="closetitle" src="./images/shopMall/close.png" alt="">
+            </h3>
+            <div class="shop-liang-section shop-vip-section">
+                <div class="shop-vip-main">
+                    <div class="shop-vipShow">
+                        <img class="shop-showStage" src="./images/shopMall/svip.png" alt="">
+                    </div>
+                </div>
+                <div class="shop-liang-side shop-vip-side">
+                    <p>
+                        <em>时&nbsp;&nbsp;&nbsp长:</em>
+                        <span>永久</span>
+                    </p>
+                    <p>
+                        <em>活动价:</em>
+                        <span>2800000钻石</span>
+                    </p>
+                    <p>
+                        <em>原&nbsp;&nbsp;&nbsp;价:</em>
+                        <span class="lineThrough">1000000钻石</span>
+                    </p>
+                </div>
+            </div>
+            <a class="buyAndUse" href="">确定</a>
+        </div>
+    </div>
+    <div id="pop-wrap">
+    <div id="pop-box" class="clear-fix">
+        <div class="pop-title">
+            <span>如何拥有？</span>
+            <img id="closeSvip" class="closetitle" src="./images/shopMall/close.png" alt="">
+        </div>
+        <div class="pop-content">
+            <span>座驾姓名</span>
+            <em>暂无描述</em>
+        </div>
+        <div class="pop-footer">
+            <a class="buyAndUse" href="">确定</a>
+        </div>
+    </div>
+</div>
+    <!-- SHOPMALL E -->
+    <!-- footerS -->
+    <footer>
+        <div class="xinglu-footer clear-fix">
+            <div class="xinglu-footer-nav">
+                <p>
+                    <a href="">帮助中心</a>
+                    <a href="">联系我们</a>
+                    <a href="">直播服务协议</a>
+                    <a href="">关于我们</a>
+                    <a href="">用户协议</a>
+                    <a href="">文明直播承诺书</a>
+                    <a href="">直播公约</a>
+                    <a href="">用户隐私手册</a>
+                </p>
+                <p>
+                    <a href="" class="clickstat">
+                        星鹿直播(浙ICP备20029795号)
+                    </a>
+                    |
+                    <a href="" class="clickstat">12318全国文化市场举报</a>
+                    |
+                    <a href="" class="clickstat">网上有害信息举报专区</a>
+                    |
+                    <a href="" class="clickstat">
+                        浙江省互联网违法和不良信息举报中心
+                    </a>
+                    |
+                    <a href="" class="clickstat">网络110报警服务</a>
+                    |
+                    <a href="" class="clickstat">
+                        邮箱举报：1181182018@qq.com
+                    </a>
+                </p>
+                <p>
+                    <a href="" class="clickstat">
+                        义乌市星汇网络科技有限公司
+                    </a>
+                </p>
+                <p>
+                    <a href="" class="clickstat">
+                        网络文化经营许可证：浙网文(2020)3282-148号
+                    </a>
+                </p>
+                <p>
+                    <a href="" class="clickstat">
+                        ©2020--2020 星鹿直播ywsxh.cn版权所有
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footerE -->
+</body>
+
+</html>

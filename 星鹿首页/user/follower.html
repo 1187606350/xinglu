@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="./css/user.css" />
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/jquery-ui/jquery-ui.js"></script>
+    <script src="../swiper/js/swiper.min.js"></script>
+    <script src="../js/swiper-init.js"></script>
+    <script src="../js/pagination.js"></script>
+    <script src="../js/pagination-init.js"></script>
+    <script src="./js/user.js"></script>
+</head>
+
+<body>
+    <!-- 通用头部S -->
+    <header class="clear-fix">
+        <div class="xinglu-header clear-fix">
+            <h1 id="xinglu-header-logo">
+                <a href="index.html">
+                    <img src="../images/index/logo.png" alt="星鹿直播" />
+                </a>
+            </h1>
+            <div class="xinglu-header-nav">
+                <div class="xinglu-nav-item">
+                    <a class="headactive" href="../index.html">首页</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="../rankList.html">排行榜</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="../shopMall.html">商城</a>
+                </div>
+                <div class="xinglu-nav-item">
+                    <a href="../download.html">下载客户端</a>
+                </div>
+            </div>
+            <div class="xinglu-header-search clear-fix">
+                <form action="">
+                    <input type="text" placeholder="搜索房间" />
+                    <button type="submit" class="btn-search"><img src="../images/index/sousuo.png" alt=""></button>
+                </form>
+            </div>
+            <div class="xinglu-header-right">
+                <div class="xinglu-header-control clearfix">
+                    <div class="xinglu-nav-right xinglu-nav-dailihoutai">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-daili-icon" src="../images/index/houtai.png" alt="">
+                            <span class="title">代理后台</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-onlineChongzhi">
+                        <a class="xinglu-nav-title" href="">
+                            <img class="xinglu-nav-icon xinglu-nav-chongzhi-icon" src="../images/index/chongzhi.png"
+                                alt="">
+                            <span class="title">在线充值</span>
+                        </a>
+                    </div>
+                    <div class="xinglu-nav-right xinglu-nav-login">
+                        <a class="xinglu-nav-title" href="#login" id="nav-login">
+                            <img class="xinglu-nav-icon xinglu-nav-login-icon" src="../images/index/login.png" alt="">
+                            <span class="xinglu-login">登录</span>
+                        </a>
+                        <i class="xinglu-nav-login-l">|</i>
+                        <a class="xinglu-nav-title" href="#register" id="nav-register">
+                            <span class="xinglu-register">注册</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 通用头部E -->
+    <!-- bannerS -->
+    <div class="bannerWrap">
+        <div class="banner">
+            <div class="swiper-container" id="common-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../images/banner/banner1.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/banner/banner2.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/banner/banner3.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/banner/banner4.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/banner/banner5.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- bannerE -->
+    <!-- containerWrap S -->
+    <div class="user-containerWrap clear-fix">
+        <div class="user-container">
+            <div class="user-left">
+                <div class="user-personInfo">
+                    <div class="user-userInfo">
+                        <img src="../images/index/meinv3.jpg" alt="" />
+                        <div class="userName">PIKAQIU</div>
+                        <div class="userID">ID:555666</div>
+                    </div>
+                    <ul class="user-myAssets">
+                        <li>
+                            <img src="./images/center/xingbi.png" alt="" />
+                            <span>2225555</span>
+                        </li>
+                        <li>
+                            <img src="./images/center/yuanbao.png" alt="" />
+                            <span>2225555</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="user-centerList">
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/chongzhi.png" alt="">
+                            <span>充值商城</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/wode.png" alt="">
+                            <span>我的资料</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/tuiguang.png" alt="">
+                            <span>我的推广</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/family.png" alt="">
+                            <span>我的家族</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/fangguanjudengji.png" alt="">
+                            <span>我的房管</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/guanzhu.png" alt="">
+                            <span>我的关注</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/fensi.png" alt="">
+                            <span>我的粉丝</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/zengsongjinghao.png" alt="">
+                            <span>我的靓号</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/shouhu.png" alt="">
+                            <span>我守护的主播</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/tixian.png" alt="">
+                            <span>我要提现</span>
+                        </a>
+                    </li>
+                    <li class="click-item">
+                        <a href="" class="user-item">
+                            <img src="./images/center/choosecar.png" alt="">
+                            <span class="click-span-item">我的座驾</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="user-item">
+                            <img src="./images/center/zhangdan.png" alt="">
+                            <span>我的账单</span>
+
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="user-right clear-fix">
+                <div class="common-no-record2">
+                    <img src="./images/center/noEmpty.png" alt="">
+                    <div class="common-Tips">您还没有关注的主播～</div>  
+                    <div class="recommendHost">
+                        <div class="tjzb">我们为您推荐以下主播：</div>
+                        <ul id="recommend-list">
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li> 
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li> 
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li> 
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li> 
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li> 
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>    
+
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li> 
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow ri-nolive">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommend-item">
+                                    <a href="" class="ri-avatar">
+                                        <img src="./images/center/meinv3.jpg" alt="">
+                                    </a>
+                                    <div class="ri-livenow">
+                                        <div class="ri-info">
+                                            <div class="ri-name">一个小主播</div>
+                                            <div class="ri-fansnum"><span>241</span><span>粉丝</span></div>
+                                        </div>
+                                        <div class="ri-gz-btn">
+                                            <span>+关注</span>
+                                        </div>
+                                        <div class="ri-live">
+                                            <em>正在直播</em><span>425/500</span>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </li> 
+                        </ul>
+                        <div class="recommend-paging paging-site"></div>
+           
+                    </div>
+                  
+                </div>
+             
+            </div>
+        </div>
+    </div>
+    <!-- containerWrap E -->
+    <!-- footerS -->
+    <footer class="clear-fix">
+        <div class="xinglu-footer clear-fix">
+            <div class="xinglu-footer-nav">
+                <p>
+                    <a href="">帮助中心</a>
+                    <a href="">联系我们</a>
+                    <a href="">直播服务协议</a>
+                    <a href="">关于我们</a>
+                    <a href="">用户协议</a>
+                    <a href="">文明直播承诺书</a>
+                    <a href="">直播公约</a>
+                    <a href="">用户隐私手册</a>
+                </p>
+                <p>
+                    <span>星鹿直播(浙ICP备20029795号)</span>
+                    |
+                    <span>12318全国文化市场举报</span>
+                    |
+                    <span>网上有害信息举报专区</span>
+                    |
+                    <span>浙江省互联网违法和不良信息举报中心</span>
+                    |
+                    <span>网络110报警服务</span>
+                    |
+                    <span>邮箱举报：1181182018@qq.com</span>
+                </p>
+                <h6>义乌市星汇网络科技有限公司</h6>
+                <h6>网络文化经营许可证：浙网文(2020)3282-148号</h6>
+                <h6>©2020--2020 星鹿直播ywsxh.cn版权所有</h6>
+            </div>
+        </div>
+    </footer>
+    <!-- footerE -->
+</body>
+
+</html>

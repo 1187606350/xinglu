@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        
+        <link rel="stylesheet" href="swiper/css/swiper.min.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/jquery-ui/jquery-ui.js"></script>
+        <script src="swiper/js/swiper.min.js"></script>
+        <script src="js/swiper-init.js"></script>
+    </head>
+
+    <body>
+        <!-- 通用头部S -->
+        <header class="clear-fix">
+            <div class="xinglu-header clear-fix">
+                <h1 id="xinglu-header-logo">
+                    <a href="index.html">
+                        <img src="images/index/logo.png" alt="星鹿直播" />
+                    </a>
+                </h1>
+                <div class="xinglu-header-nav">
+                    <div class="xinglu-nav-item">
+                        <a class="headactive" href="index.html">首页</a>
+                    </div>
+                    <div class="xinglu-nav-item">
+                        <a href="rankList.html">排行榜</a>
+                    </div>
+                    <div class="xinglu-nav-item">
+                        <a href="shopMall.html">商城</a>
+                    </div>
+                    <div class="xinglu-nav-item">
+                        <a href="download.html">下载客户端</a>
+                    </div>
+                </div>
+                <div class="xinglu-header-search clear-fix">
+                    <form action="">
+                        <input type="text" placeholder="搜索房间" />
+                        <button type="submit" class="btn-search"><img src="./images/index/sousuo.png" alt=""></button>
+                    </form>
+                </div>
+                <div class="xinglu-header-right">
+                    <div class="xinglu-header-control clearfix">
+                        <div class="xinglu-nav-right xinglu-nav-dailihoutai">
+                            <a class="xinglu-nav-title" href="">
+                                <img  class="xinglu-nav-icon xinglu-nav-daili-icon" src="./images/index/houtai.png" alt="">
+                                <span class="title">代理后台</span>
+                            </a>
+                        </div>
+                        <div class="xinglu-nav-right xinglu-nav-onlineChongzhi">
+                            <a class="xinglu-nav-title" href="">
+                               <img  class="xinglu-nav-icon xinglu-nav-chongzhi-icon" src="./images/index/chongzhi.png" alt="">
+                                <span class="title">在线充值</span>
+                            </a>
+                        </div>
+                        <div class="xinglu-nav-right xinglu-nav-login">
+                            <a
+                                class="xinglu-nav-title"
+                                href="#login"
+                                id="nav-login"
+                            >
+                               <img class="xinglu-nav-icon xinglu-nav-login-icon" src="./images/index/login.png" alt="">
+                                <span class="xinglu-login">登录</span>
+                            </a>
+                            <i class="xinglu-nav-login-l">|</i>
+                            <a
+                                class="xinglu-nav-title"
+                                href="#register"
+                                id="nav-register"
+                            >
+                                <span class="xinglu-register">注册</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 通用头部E -->
+        <!-- bannerS -->
+        <div class="bannerWrap">
+            <div class="banner">
+                <div class="swiper-container" id="common-banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/banner/banner1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/banner/banner2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/banner/banner3.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/banner/banner4.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/banner/banner5.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- bannerE -->
+        <!-- containerS -->
+        <div class="containerWrap clear-fix">
+            <div class="container">
+                <div class="left room-left">
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <div class="shuxian"></div>
+                                <a href="allRoom.html">星鹿官方</a>
+                            </li>
+                            <li>
+                                <div class="shuxian"></div>
+                                <a href="myAttention.html">我的关注</a>
+                            </li>
+                            <li>
+                                <div class="shuxian"></div>
+                                <a href="latestBrowse.html">最新浏览</a>
+                            </li>
+                            <li>
+                                <div class="shuxian"></div>
+                                <a href="recharge.html">在线充值</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="liveHallWrap">
+                        <div class="commonTitle">
+                           <img src="./images/index/dating.png" alt="">
+                            <a href="">直播大厅</a>
+                        </div>
+                        <div class="liveNum">
+                            <h5>当前在线玩家人数</h5>
+                            <p>13145</p>
+                        </div>
+                    </div>
+                    <div class="roomTypeWrap">
+                        <div class="commonTitle">
+                            <img src="./images/index/roomType-icon.png" alt="">
+                            房间类型
+                        </div>
+                        <div class="box">
+                            <a href="multiplayer.html">
+                                <p>多人娱乐</p>
+                            </a>
+                            <a href="xinglu-offical.html">
+                                <p>星鹿官方</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ggHelpWrap">
+                        <a href="" class="commonTitle">
+                           <img src="./images/index/ggHelp-icon.png" alt="">
+                            公告帮助
+                        </a>
+                        <div class="box">
+                            <a href="">
+                                <h6>[公告]软著证书</h6>
+                            </a>
+                            <a href="">
+                                <h6>[公告]增值电信业务</h6>
+                            </a>
+                            <a href="">
+                                <h6>[帮助]主播管理规范</h6>
+                            </a>
+                            <a href="">
+                                <h6>[公告]增值电信业务...</h6>
+                            </a>
+                            <a href="">
+                                <h6>[帮助]主播管理规范</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="downloadWrap">
+                        <a href="" class="commonTitle">
+                           <img src="./images/index/download-icon.png" alt="">
+                            立即下载
+                        </a>
+                        <div class="box">
+                            <a href="">
+                                <p>手机端</p>
+                            </a>
+                            <a href="">
+                                <p>电脑端</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="officialWrap">
+                        <a href="" class="commonTitle">
+                           <img src="./images/index/official-icon.png" alt="">
+                            官方客服
+                        </a>
+                        <div class="box">
+                            <a href="">
+                                <p>在线客服</p>
+                            </a>
+                            <a href="">
+                                <p>QQ客服一</p>
+                            </a>
+                            <a href="">
+                                <p>QQ客服二</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="multiWrap">
+                    <div class="multiBox">
+                        <div class="multiHead clear-fix">
+                            <div class="multiTitle">全部房间</div>
+                            <div class="room-sort">
+                                <span>推荐排序</span>
+                                &nbsp;
+                                <em></em>
+                                &nbsp;
+                                <span class="sortactive">人气排序</span>
+                            </div>
+                            <div class="xinglu-multi-search clear-fix">
+                                <form action="">
+                                    <input type="text" placeholder="搜索房间" />
+                                    <button
+                                        type="submit"
+                                        class="room-search"
+                                    ><img src="./images/index/sousuo.png" alt=""></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="multiLive">
+                            <ul class="multiRoom">
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                                <li>
+                                    <a href="" class="multi-item">
+                                        <img class="liveAvatar"
+                                            src="./images/index/meinv2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="num">
+                                           <img class="hot" src="./images/index/hot.png" alt="">
+                                            1249/2200
+                                        </div>
+                                    </a>
+                                    <div class="roomName">一个聊天室</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- containerE -->
+        <!-- footerS -->
+        <footer>
+            <div class="xinglu-footer clear-fix">
+                <div class="xinglu-footer-nav">
+                    <p>
+                        <a href="">帮助中心</a>
+                        <a href="">联系我们</a>
+                        <a href="">直播服务协议</a>
+                        <a href="">关于我们</a>
+                        <a href="">用户协议</a>
+                        <a href="">文明直播承诺书</a>
+                        <a href="">直播公约</a>
+                        <a href="">用户隐私手册</a>
+                    </p>
+                    <p>
+                        <a href="" class="clickstat">
+                            星鹿直播(浙ICP备20029795号)
+                        </a>
+                        |
+                        <a href="" class="clickstat">12318全国文化市场举报</a>
+                        |
+                        <a href="" class="clickstat">网上有害信息举报专区</a>
+                        |
+                        <a href="" class="clickstat">
+                            浙江省互联网违法和不良信息举报中心
+                        </a>
+                        |
+                        <a href="" class="clickstat">网络110报警服务</a>
+                        |
+                        <a href="" class="clickstat">邮箱举报：1181182018@qq.com</a>
+                    </p>
+                    <p>
+                        <a href="" class="clickstat">
+                            义乌市星汇网络科技有限公司
+                        </a>
+                    </p>
+                    <p>
+                        <a href="" class="clickstat">
+                            网络文化经营许可证：浙网文(2020)3282-148号
+                        </a>
+                    </p>
+                    <p>
+                        <a href="" class="clickstat">
+                            ©2020--2020 星鹿直播ywsxh.cn版权所有
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- footerE -->
+
+       
+    </body>
+
+    <script src="js/find.js"></script>
+</html>

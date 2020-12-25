@@ -1,0 +1,127 @@
+
+.user-containerWrap {
+    width: 100%;
+    background: #f4f5f8;
+}
+
+.user-container {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-bottom: 110px;
+}
+
+.user-container .user-left {
+    width: 180px;
+}
+
+.user-left .user-personInfo {
+    width: 180px;
+    height: 230px;
+    background-color: #fff;
+}
+
+.user-personInfo .user-userInfo {
+    padding-top: 20px;
+    text-align: center;
+    height: 118px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.user-userInfo .userName {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #353535;
+}
+
+.user-userInfo .userID {
+    font-size: 14px;
+    color: #666666;
+}
+
+.user-myAssets {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.user-myAssets li {
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.user-myAssets li span {
+    position: relative;
+    display: inline-block;
+    line-height: 25px;
+    font-size: 20px;
+    color: #666666;
+    left: 0;
+    top: 4px;
+}
+
+.user-myAssets img {
+    vertical-align: middle;
+}
+
+.user-userInfo>img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.user-container .user-right {
+    flex: 1;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.user-right>.gift {
+    box-sizing: border-box;
+    height: 1050px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.user-left .user-centerList {
+    width: 180px;
+    background-color: #fff;
+    margin-top: 40px;
+    height: 730px;
+    border-radius: 10PX;
+}
+
+.user-centerList li {
+    height: 60px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.user-centerList li a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 63px;
+    position: relative;
+}
+
+.user-centerList a img {
+    position: absolute;
+    left: 34px;
+    top: 20px;
+}
+
+.user-centerList a span {
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+.user-centerList a:hover {
+    background: #54CAA4;
+}
+
+.user-centerList a:hover span {
+    color: #fff;
+}

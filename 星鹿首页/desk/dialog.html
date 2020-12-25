@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/jquery-ui/jquery-ui.js"></script>
+    <script src="../js/pagination.js"></script>
+    <script src="../js/pagination-init.js"></script>
+    <script src="js/desk.js"></script>
+
+<body>
+    <div id="msg-wrap" class="popbox" style="display: block;">
+        <div class="msg_box">
+            <div class="msg-title">
+                <span>开通守护</span>
+                <img class="closetitle" src="./images/close.png" alt="">
+            </div>
+            <div class="msg-content">
+                <ul class="guardType">
+                    <li class="active"><span>黄金守护</span></li>
+                    <li><span>白银守护</span></li>
+                </ul>
+                <ul id="goldGuard" class="guardbox" >
+                    <li>
+                        <em>守护:</em>
+                        <span class="guardtype_info">
+                            <img class="guardavatar" src="./images/meinv3.jpg" alt="">
+                            <span class="object-nickname">用户昵称</span>
+                            <span class="object-id">(用户ID)</span>
+                        </span>
+                    </li>
+                    <li>
+                        <em>时长:</em>
+                        <span class="guardtype_info">
+                            <ul class="guard_time">
+                                <li class="active"><span>心意满满 30天</span></li>
+                                <li><span>长长久久 90天</span></li>
+                                <li><span>威风八面 180天</span></li>
+                                <li><span>唯我独尊 360天</span></li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <em>价格:</em>
+                        <span class="guardtype_info">
+                            <span class="guard-price"><span>9000000</span>钻石</span>
+                            <span class="guard-tips">免费赠送10天，更划算！</span>
+                        </span>
+                    </li>
+                    <li>
+                        <em>特权:</em>
+                        <span class="guardtype_info">
+                            <ul class="guard_privilege">
+                                <li>
+                                    <b>专属坐席</b>
+                                    <div class="exclusive">
+                                        <img class="guard" src="./images/guard_g.png" alt="">
+                                        <img class="avatar" src="./images/meinv3.jpg" alt="">
+
+                                    </div>
+                                    <span>黄金至尊席位</span>
+                                </li>
+                                <li>
+                                    <b>至尊座驾</b>
+                                    <div class="supercar">
+                                        <img src="./images/car.png" alt="">
+                                    </div>
+                                    <span>法拉利(3个月)</span>
+                                </li>
+                                <li>
+                                    <b>聊天特权</b>
+                                    <span>金色文字</span>
+                                    <span>守护标志</span>
+                                    <span>专属礼物</span>
+                                    <span>专属表情</span>
+                                </li>
+                                <li>
+                                    <b>防护特权</b>
+                                    <span>防管理踢</span>
+                                    <span>防管理禁言</span>
+                                    <span>防特权踢</span>
+                                    <span>防特权禁言</span>
+                                </li>
+
+                            </ul>
+                        </span>
+                    </li>
+                </ul>
+                <ul id="sliverGuard" class="guardbox"  style="display: none;">
+                    <li>
+                        <em>守护:</em>
+                        <span class="guardtype_info">
+                            <img class="guardavatar" src="./images/meinv3.jpg" alt="">
+                            <span class="object-nickname">用户昵称</span>
+                            <span class="object-id">(用户ID)</span>
+                        </span>
+                    </li>
+                    <li>
+                        <em>时长:</em>
+                        <span class="guardtype_info">
+                            <ul class="guard_time">
+                                <li class="active"><span>心意满满 30天</span></li>
+                                <li><span>长长久久 90天</span></li>
+                                <li><span>威风八面 180天</span></li>
+                                <li><span>唯我独尊 360天</span></li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <em>价格:</em>
+                        <span class="guardtype_info">
+                            <span class="guard-price"><span>9000000</span>钻石</span>
+                            <span class="guard-tips">免费赠送10天，更划算！</span>
+                        </span>
+                    </li>
+                    <li>
+                        <em>特权:</em>
+                        <span class="guardtype_info">
+                            <ul class="guard_privilege">
+                                <li>
+                                    <b>专属坐席</b>
+                                    <div class="exclusive ">
+                                        <img class="guard" src="./images/guard_s.png" alt="">
+                                        <img class="avatar" src="./images/meinv3.jpg" alt="">
+
+                                    </div>
+                                    <span>白银至尊席位</span>
+                                </li>
+                                <li>
+                                    <b>至尊座驾</b>
+                                    <div class="supercar">
+                                        <img src="./images/car.png" alt="">
+                                    </div>
+                                    <span>法拉利(3个月)</span>
+                                </li>
+                                <li>
+                                    <b>聊天特权</b>
+                                    <span>金色文字</span>
+                                    <span>守护标志</span>
+                                    <span>专属礼物</span>
+                                    <span>专属表情</span>
+                                </li>
+                                <li>
+                                    <b>防护特权</b>
+                                    <span>防管理踢</span>
+                                    <span>防管理禁言</span>
+                                    <span>防特权踢</span>
+                                    <span>防特权禁言</span>
+                                </li>
+
+                            </ul>
+                        </span>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="msg-footer">
+                <span class="toConfirm msg-button">立即开通</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link rel="stylesheet" href="../swiper/css/swiper.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/jquery-ui/jquery-ui.js"></script>
+    <script src="../swiper/js/swiper.js"></script>
+    <script src="../js/swiper-init.js"></script>
+    <script src="../js/pagination.js"></script>
+    <script src="../js/pagination-init.js"></script>
+    <script src="../layDate/laydate/laydate.js"></script>
+    <script src="./js/desk.js"></script>
+
+<body>
+    <div class="desk-wrap">
+        <!-- 公共菜单栏S -->
+        <div class="left">
+            <div class="hall">大厅列表
+                <em>当前在线:<span>5635635111</span></em>
+            </div>
+            <div class="list">
+                <div class="item">
+                    <a href="room.html"> <img src="images/fangjian.png" alt="">收藏和最近登录的房间</a>
+                </div>
+                <div class="item">
+                    <a href="recommend.html"><img src="images/tuijian.png" alt="">推荐区</a>
+                </div>
+                <div class="item itemlist">
+                    <a href="javascript:;"><img src="images/renqi.png" alt="">人气区</a>
+                    <div class="itembox">
+                        <ul class="hallBox">
+                            <li class="active"><a href="#lsjr-room">乱世佳人</a></li>
+                            <li><a href="#qgqc-room">倾国倾城</a></li>
+                            <li><a href="#slth-room">十里桃花</a></li>
+                            <li><a href="#xywt-room">心意舞台</a></li>
+                            <li><a href="#jsrh-room">江山如画</a></li>
+                            <li><a href="#mvlb-room">美女聊吧</a></li>
+                            <li><a href="#mlwx-room">魅力无限</a></li>
+                            <li><a href="#mhkj-room">迷幻空间</a></li>
+                            <li><a href="#wwgk-room">我为歌狂</a></li>
+                            <li><a href="#cjwz-room">超级舞者</a></li>
+                            <li><a href="#dmyl-room">大麦娱乐</a></li>
+                            <li><a href="#gfpd-room">官方频道</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item itemlist">
+                    <a href="javascript:;"><img src="images/rank.png" alt="">超级排行榜</a>
+                    <div class="itembox">
+                        <ul class="rankBox">
+                            <li>
+                                <a href="">每日幸运星</a>
+                            </li>
+
+                            <li>
+                                <a href="">本月最旺房间</a>
+                            </li>
+                            <li>
+                                <a href="">房间消费排行榜</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item itemlist">
+                    <a href="javascript:;"><img src="images/huodong.png" alt="">活动中心</a>
+                    <div class="itembox">
+                        <ul class="activityBox">
+                            <li>
+                                <a href="">跳跃的音符</a>
+                            </li>
+                            <li>
+                                <a href="">七夕特辑</a>
+                            </li>
+                            <li>
+                                <a href="">人气之星主持大赛</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rank-area">
+            <div class="rankbox">
+                <div class="dayluckStar-wrap" id="dayluckStar">
+                    <div class="dayluck-bg1"></div>
+                    <div class="dayluck-bg2"></div>
+                    <div class="dayluck-bg3"></div>
+                    <a href="javascript:;" class="dayluck-bg4"></a>
+                    <div class="rules">
+                        <div class="intro">
+                            <span><em>时间：</em> 24小时内你都有机会成为幸运星。共分四个阶段，如下提示。</span>
+                            <span><em>说明：</em>
+                                在时间段内刷价值对应的幸运礼物 的用户中500倍最多的ID号，可以领取对应奖励，如遇到中奖次
+                                数一样，系统自动评判奖励（友情提示：尽量比别人多一次）。务必及时领取奖励！如不及时领取。
+                                每日23时自动发放奖励。
+                            </span>
+                        </div>
+                        <div class="crownintro">
+                            <ul>
+                                <li>
+                                    <div class="crwontype">
+                                        <img src="./images/platinum.png" alt="">
+                                        <div class="crown_name bname">白金</div>
+                                    </div>
+                                    <div class="crowninfo">
+                                        <p><img src="./images/prizenum.png" alt=""><span>500万金</span></p>
+                                        <p><img src="./images/need.png" alt=""><span>50000金礼物</span></p>
+                                        <p><img src="./images/duration.png" alt=""><span>23:00至01:00</span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="crwontype">
+                                        <img src="./images/gold.png" alt="">
+                                        <div class="crown_name jname">金牌</div>
+                                    </div>
+                                    <div class="crowninfo">
+                                        <p><img src="./images/prizenum.png" alt=""><span>300万金</span></p>
+                                        <p><img src="./images/need.png" alt=""><span>10000金礼物</span></p>
+                                        <p><img src="./images/duration.png" alt=""><span>16:00至18:00</span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="crwontype">
+                                        <img src="./images/silver.png" alt="">
+                                        <div class="crown_name yname">银牌</div>
+                                    </div>
+                                    <div class="crowninfo">
+                                        <p><img src="./images/prizenum.png" alt=""><span>200万金</span></p>
+                                        <p><img src="./images/need.png" alt=""><span>5000金礼物</span></p>
+                                        <p><img src="./images/duration.png" alt=""><span>14:00至16:00</span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="crwontype">
+                                        <img src="./images/bronze.png" alt="">
+                                        <div class="crown_name tname">铜牌</div>
+                                    </div>
+                                    <div class="crowninfo">
+                                        <p><img src="./images/prizenum.png" alt=""><span>100万金</span></p>
+                                        <p><img src="./images/need.png" alt=""><span>2000金礼物</span></p>
+                                        <p><img src="./images/duration.png" alt=""><span>20:00至22:00</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dayluckrank win_num">
+                        <ul class="rank_list">
+                            <li>
+                                <div class="crown_rank">
+                                    <img src="./images/platinum_s.png" alt="">
+                                    <span class="bname">白金</span>
+                                </div>
+                                <table class="rank_table">
+                                    <thead>
+                                        <tr>
+                                            <th>排名</th>
+                                            <th>昵称</th>
+                                            <th>次数</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><a href="">一只小胖丘11</a></td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><a href="">一只小胖丘1111111111111</a></td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><a href="">一只小胖丘1111111111111</a></td>
+                                            <td>2</td>
+                                        </tr>
+    
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <div class="crown_rank">
+                                    <img src="./images/gold_s.png" alt="">
+                                    <span class="jname">金牌</span>
+                                    <table class="rank_table">
+                                        <thead>
+                                            <tr>
+                                                <th>排名</th>
+                                                <th>昵称</th>
+                                                <th>次数</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="crown_rank">
+                                    <img src="./images/silver_s.png" alt="">
+                                    <span class="yname">银牌</span>
+                                    <table class="rank_table">
+                                        <thead>
+                                            <tr>
+                                                <th>排名</th>
+                                                <th>昵称</th>
+                                                <th>次数</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="crown_rank">
+                                    <img src="./images/bronze_s.png" alt="">
+                                    <span class="tname">铜牌</span>
+                                    <table class="rank_table">
+                                        <thead>
+                                            <tr>
+                                                <th>排名</th>
+                                                <th>昵称</th>
+                                                <th>次数</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dayluckrank daylucklist">
+                        <ul class="luck_list">
+                            <li>
+                                <div class="crown_rank">
+                                    <img src="./images/platinum_s.png" alt="">
+                                    <span class="bname">白金</span>
+                                </div>
+                                <div class="luckstar_info">
+                                    <p>
+                                        <span>昵称：</span>
+                                        <em><a href="">一只小胖丘1111111111111111111111111</a></em>
+                                    </p>
+                                    <p>
+                                        <span>ID：</span>
+                                        <em>66666</em>
+                                    </p>
+                                    <p>
+                                        <span>时间：</span>
+                                        <em>2020-11-230</em>
+                                    </p>
+                                    <p>
+                                        <span>昨日：</span>
+                                        <em><a href="">两只小胖丘</a></em>
+                                    </p>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="crown_rank">
+                                    <img src="./images/gold_s.png" alt="">
+                                    <span class="jname">金牌</span>
+                                </div>
+                                <div class="luckstar_info">
+                                    <p>
+                                        <span>昵称：</span>
+                                        <em><a href="">一只小胖丘11</a></em>
+                                    </p>
+                                    <p>
+                                        <span>ID：</span>
+                                        <em>66666</em>
+                                    </p>
+                                    <p>
+                                        <span>时间：</span>
+                                        <em>2020-11-230</em>
+                                    </p>
+                                    <p>
+                                        <span>昨日：</span>
+                                        <em><a href="">两只小胖丘</a></em>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="crown_rank">
+                                    <img src="./images/silver_s.png" alt="">
+                                    <span class="yname">银牌</span>
+                                </div>
+                                <div class="luckstar_info">
+                                    <p>
+                                        <span>昵称：</span>
+                                        <em><a href="">一只小胖丘11</a></em>
+                                    </p>
+                                    <p>
+                                        <span>ID：</span>
+                                        <em>66666</em>
+                                    </p>
+                                    <p>
+                                        <span>时间：</span>
+                                        <em>2020-11-230</em>
+                                    </p>
+                                    <p>
+                                        <span>昨日：</span>
+                                        <em><a href="">两只小胖丘</a></em>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="crown_rank">
+                                    <img src="./images/bronze_s.png" alt="">
+                                    <span class="tname">铜牌</span>
+                                </div>
+                                <div class="luckstar_info">
+                                    <p>
+                                        <span>昵称：</span>
+                                        <em><a href="">一只小胖丘11111111111</a></em>
+                                    </p>
+                                    <p>
+                                        <span>ID：</span>
+                                        <em>66666</em>
+                                    </p>
+                                    <p>
+                                        <span>时间：</span>
+                                        <em>2020-11-230</em>
+                                    </p>
+                                    <p>
+                                        <span>昨日：</span>
+                                        <em><a href="">两只小胖丘</a></em>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dayluckrank hiswinlist">
+                        <ul class="rank_list">
+                            <li>
+                                <div class="crown_rank">
+                                    <img src="./images/platinum_s.png" alt="">
+                                    <span class="bname">白金</span>
+                                </div>
+                                <table class="rank_table">
+                                    <thead>
+                                        <tr>
+                                            <th>排名</th>
+                                            <th>昵称</th>
+                                            <th>次数</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><a href="">一只小胖丘1111111111111</a></td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><a href="">一只小胖丘1111111111111</a></td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><a href="">一只小胖丘1111111111111</a></td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td><a href="">一只小胖丘1111111111111</a></td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td><a href="">一只小胖丘1111111111111</a></td>
+                                            <td>2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <div class="crown_rank">
+                                    <img src="./images/gold_s.png" alt="">
+                                    <span class="jname">金牌</span>
+                                    <table class="rank_table">
+                                        <thead>
+                                            <tr>
+                                                <th>排名</th>
+                                                <th>昵称</th>
+                                                <th>次数</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="crown_rank">
+                                    <img src="./images/silver_s.png" alt="">
+                                    <span class="yname">银牌</span>
+                                    <table class="rank_table">
+                                        <thead>
+                                            <tr>
+                                                <th>排名</th>
+                                                <th>昵称</th>
+                                                <th>次数</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="crown_rank">
+                                    <img src="./images/bronze_s.png" alt="">
+                                    <span class="tname">铜牌</span>
+                                    <table class="rank_table">
+                                        <thead>
+                                            <tr>
+                                                <th>排名</th>
+                                                <th>昵称</th>
+                                                <th>次数</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><a href="">一只小胖丘1111111111111</a></td>
+                                                <td>2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rankbox-footer">
+                        <p><a href="">浙 B2-20060279 浙江省第二届“十佳”文明网办示范单位</a></p>
+                        <p><a href="">Copyright©️2006-2011 版权所有9158.com</a> </p>
+                        <p><a href="">客服：400-8839158</a> </p>
+                    </div>
+                </div>
+                <div class="mostPopular-wrap" id="mostPopular">
+                    <div class="mostPopular-bg1"></div>
+                    <div class="mostPopular-bg2"></div>
+                    <div class="mostPopular-content">
+                        <table class="mostPopular-table">
+                            <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>房间号</th>
+                                    <th>房间名</th>
+                                    <th>房间消费</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>12345</td>
+                                    <td>一个聊天房间</td>
+                                    <td>1234567899</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>12345</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>12345</td>
+                                    <td>一个聊天房间</td>
+                                    <td>55555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>12345</td>
+                                    <td>一个聊天房间</td>
+                                    <td>55555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>12345</td>
+                                    <td>一个聊天房间</td>
+                                    <td>55555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>12345</td>
+                                    <td>一个聊天房间</td>
+                                    <td>55555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>12345</td>
+                                    <td>一个聊天房间</td>
+                                    <td>55555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>12345</td>
+                                    <td>一个聊天房间</td>
+                                    <td>55555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>12345</td>
+                                    <td>一个聊天房间</td>
+                                    <td>55555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>12345</td>
+                                    <td>一个聊天房间</td>
+                                    <td>55555555555</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="rankbox-footer">
+                        <p><a href="">浙 B2-20060279 浙江省第二届“十佳”文明网办示范单位</a></p>
+                        <p><a href="">Copyright©️2006-2011 版权所有9158.com</a> </p>
+                        <p><a href="">客服：400-8839158</a> </p>
+                    </div>
+                </div>
+                <div class="roomRank-wrap" id="roomRank">
+                    <div class="roomRank-bg"></div>
+    
+                    <div class="roomRank-search">
+                        <div class="search-content">
+                            <span>【筛选查询】</span><span>时间段：</span>
+                            <input type="" id="search-rank">
+                            <button type="submit"><img src="./images/submit.png" alt=""></button>
+                            <em class="search-tips">注：只查询整月信息</em>
+    
+                        </div>
+                    </div>
+                    <div class="roomRank-content">
+                        <table class="roomRank-table">
+                            <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>房间号</th>
+                                    <th>房间名</th>
+                                    <th>房间消费</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+    
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>333</td>
+                                    <td>一个聊天房间</td>
+                                    <td>5555555555</td>
+                                </tr>
+    
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <div class="rankbox-footer">
+                        <p><a href="">浙 B2-20060279 浙江省第二届“十佳”文明网办示范单位</a></p>
+                        <p><a href="">Copyright©️2006-2011 版权所有9158.com</a> </p>
+                        <p><a href="">客服：400-8839158</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
